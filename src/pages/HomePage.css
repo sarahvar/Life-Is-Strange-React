@@ -1,0 +1,108 @@
+/* Importation de la police manuscrite */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* Style spécifique pour la page d'accueil */
+.homepage {
+    height: 100%; /* Assurer que html et body prennent toute la hauteur de la fenêtre */
+    margin: 0; /* Enlever les marges par défaut du navigateur */
+    background-image: url('/src/assets/Accueil.gif'); /* Chemin relatif vers l'image de fond */
+    background-size: cover; /* Adapte l'image à la taille de la fenêtre */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-position: center 20%; /* Centre l'image avec un décalage vers le bas */
+    font-family: 'Gloria Hallelujah', cursive; /* Utiliser une police manuscrite */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrer le texte dans le body */
+    display: flex; /* Utiliser Flexbox pour centrer le contenu */
+    flex-direction: column; /* Alignement vertical du contenu */
+    justify-content: center; /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    min-height: 100vh; /* Assurer que le body prend au moins la hauteur de la fenêtre */
+    cursor: url('/src/assets/curseur.png'), auto; /* Ajouter l'image comme curseur */
+}
+
+/* Assurer que le curseur reste le même pour tous les éléments dans la page d'accueil */
+.homepage a, .homepage button, .homepage input, .homepage textarea, .homepage li {
+    cursor: url('/src/assets/Curseur.png'), auto; /* Appliquer le curseur personnalisé */
+}
+
+/* Style pour les liens */
+.homepage a {
+    color: #ffffff; /* Texte blanc */
+    text-decoration: none;
+    font-weight: normal; /* Enlever le gras */
+    transition: transform 0.3s ease; /* Transition pour l'effet de grossissement */
+}
+
+/* Style pour la liste de navigation */
+.homepage ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 130px 0 0 0; 
+    display: flex;
+    flex-direction: column; /* Arrange les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+.homepage li {
+    margin: 5px 0; /* Réduit l'espace vertical entre les liens */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de fond */
+    padding: 10px 0; /* Espacement interne */
+    display: inline-block; /* Pour appliquer la transformation correctement */
+}
+
+/* Application de rotations variées avec des angles réduits */
+.homepage li:nth-child(1) {
+    transform: rotate(-2deg); /* Rotation légère à gauche */
+}
+
+.homepage li:nth-child(2) {
+    transform: rotate(3deg); /* Rotation légère à droite */
+}
+
+.homepage li:nth-child(3) {
+    transform: rotate(-4deg); /* Rotation plus marquée à gauche */
+}
+
+.homepage li:nth-child(4) {
+    transform: rotate(6deg); /* Rotation plus marquée à droite */
+}
+
+/* Ajout d'une rotation pour le cinquième élément */
+.homepage li:nth-child(5) {
+    transform: rotate(-5deg); /* Rotation plus marquée à gauche */
+}
+
+/* Style pour les éléments de liste qui contiennent des liens */
+.homepage li a {
+    font-size: 1.5rem; /* Augmente la taille du texte pour plus de visibilité */
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block; /* Assure que le padding s'applique correctement */
+}
+
+/* Effet de survol pour les liens */
+.homepage a:hover {
+    transform: scale(1.1); /* Agrandit légèrement le texte au survol */
+}
+
+/* Assurer que le curseur reste le même au survol des éléments de la liste */
+.homepage li:hover {
+    cursor: url('src/assets/curseur.png'), auto; /* Appliquer le curseur personnalisé */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage li a {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}

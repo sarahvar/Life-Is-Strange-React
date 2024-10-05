@@ -1,0 +1,134 @@
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #f0f8ff; /* Couleur de fond plus douce */
+    color: #333; /* Couleur de texte principale */
+    margin: 0;
+    padding: 0;
+    cursor: url('/src/assets/curseur.png'), auto; /* Ajouter l'image comme curseur */
+}
+
+/* Assurer que le curseur reste le même pour tous les éléments */
+a, button, input, textarea, li {
+    cursor: url('/src/assets/curseur.png'), auto; /* Appliquer le curseur personnalisé */
+}
+
+h1, h2, h3 {
+    color: #003366; /* Couleur sombre pour les titres */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #3399ff; /* Couleur bleu clair pour les sous-titres */
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style pour le conteneur du tableau */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
+    border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
+    padding: 10px; /* Espacement autour du tableau */
+    margin-bottom: 20px; /* Espace en bas si nécessaire */
+}
+
+/* Style pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
+}
+
+thead {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top; /* Aligne le texte en haut des cellules */
+}
+
+th {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ececec;
+}
+
+/* Style pour les images dans les cellules du tableau */
+td img {
+    max-width: 120px; /* Ajustez cette largeur selon vos besoins */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Styles utilitaires pour l'alignement */
+.center {
+    text-align: center;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.rachelcenter {
+    text-align: center;
+}
+
+.red {
+    color: red;
+    font-weight: 700;
+}
+
+.imgrachel {
+    text-align: center;
+}
+
+img.carte {
+    max-width: 100%;
+    height: auto; /* Maintient les proportions originales de l'image */
+}

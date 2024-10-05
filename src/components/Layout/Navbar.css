@@ -1,0 +1,43 @@
+
+/* Style général pour l'en-tête */
+.Navbar {
+    background-color: #003366; 
+    padding: 20px 20px;
+  }
+  
+  
+  /* Style pour les éléments de la liste */
+  ul.navigation li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  /* Style pour les éléments de navigation */
+ul.navigation {
+  list-style: none;
+  padding: 20px 0;
+  background-color: #003366;
+  text-align: center;
+  margin: 0;
+}
+  
+ul.navigation li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+ul.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+ul.navigation a:hover,
+ul.navigation a.active,
+ul.navigation li.active a {
+  background-color: #3399ff;
+  transition: background-color 0.3s;
+  color: #ffffff;
+  font-weight: bold;
+}

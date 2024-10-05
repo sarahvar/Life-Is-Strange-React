@@ -1,0 +1,25 @@
+/* AudioPlayer.css */
+
+/* Style pour les contrôles de musique */
+#music-controls {
+    position: fixed;
+    top: 50%; /* Centrer verticalement */
+    right: 20px; /* Positionner à droite */
+    transform: translateY(-50%); /* Ajuster le centrage vertical */
+    z-index: 1000; /* Assurer que les boutons sont au-dessus des autres éléments */
+}
+
+#play-message, #stop-music {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#stop-music {
+    background: rgba(255, 0, 0, 0.7);
+}

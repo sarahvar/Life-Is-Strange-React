@@ -1,0 +1,18 @@
+/* Header.css */
+
+/* Style pour les éléments de navigation */
+.navbar {
+    padding: 20px;
+    text-align: center;
+}
+
+.home-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.home-link h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}

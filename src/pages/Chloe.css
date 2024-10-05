@@ -1,0 +1,105 @@
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #f0f8ff; /* Couleur de fond plus douce */
+    color: #333; /* Couleur de texte principale */
+    margin: 0;
+    padding: 0;
+    cursor: url('/src/assets/curseur.png'), auto; /* Ajouter l'image comme curseur */
+    text-align: center; /* Centrer tout le texte dans le corps */
+}
+
+/* Assurer que le curseur reste le même pour tous les éléments */
+a, button, input, textarea, li {
+    cursor: url('/src/assets/curseur.png'), auto; /* Appliquer le curseur personnalisé */
+}
+
+/* Supprimer les puces des listes */
+ul, ol {
+    list-style-type: none;
+    padding-left: 0; /* Supprimer le retrait à gauche des listes */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Styles généraux pour les images */
+.imgcendrier img, .imganarchie img, .conteneur img, .imgbladerunner img {
+    max-width: 100%;
+    height: auto; /* Maintient les proportions originales de l'image */
+    border-radius: 8px;
+}
+
+/* Styles pour centrer les vidéos */
+.videocenter iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style pour centrer toutes les images hors tableaux */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Spécifique pour les images dans les tableaux */
+table img {
+    max-width: 120px; /* Ajustez cette largeur selon vos besoins */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style pour les conteneurs d'images */
+.imgcendrier, .imganarchie, .conteneur, .imgbladerunner {
+    text-align: center;
+}
+
+/* Style pour les images dans la classe .imgbladerunner */
+.imgbladerunner {
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espace entre les images */
+    margin: 20px 0; /* Marge autour du conteneur d'images */
+}
+
+/* Style pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
+}
+
+/* Style pour les en-têtes du tableau */
+thead {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+/* Style pour les cellules du tableau */
+th, td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top; /* Aligne le texte en haut des cellules */
+}
+
+th {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* Style pour les lignes du tableau */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ececec;
+}

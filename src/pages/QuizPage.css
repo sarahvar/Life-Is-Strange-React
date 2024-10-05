@@ -1,0 +1,87 @@
+/* Styles généraux */
+body {
+    font-family: 'Gloria Hallelujah', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.quiz-container, .result-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.questions {
+    margin-bottom: 20px;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.result-list {
+    list-style: none;
+    padding: 0;
+}
+
+.result-list li {
+    margin-bottom: 20px;
+    padding: 10px; /* Ajout d'un peu de padding */
+    border-radius: 5px;
+}
+
+/* Style pour les réponses correctes */
+.correct-answer {
+    background-color: #d4edda; /* Couleur de fond verte claire pour les bonnes réponses */
+    border-left: 5px solid #28a745; /* Bordure gauche verte pour la bonne réponse */
+    color: #155724; /* Texte en vert foncé pour meilleure lisibilité */
+}
+
+.incorrect-answer {
+    background-color: #f8d7da; /* Couleur de fond rouge clair pour les mauvaises réponses */
+    border-left: 5px solid #dc3545; /* Bordure gauche rouge pour la mauvaise réponse */
+    color: #721c24; /* Texte en rouge foncé pour meilleure lisibilité */
+}
+
+.correct-answer-item {
+    background-color: #d4edda; /* Couleur de fond verte claire pour la bonne réponse */
+    border-left: 5px solid #28a745; /* Bordure gauche verte pour la bonne réponse */
+    color: #155724; /* Texte en vert foncé pour meilleure lisibilité */
+}

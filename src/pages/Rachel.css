@@ -1,0 +1,25 @@
+/* Cible uniquement le h1 avec la classe "rachel-heading" */
+.rachel-heading {
+    margin-top: 50px; /* Réduit la marge en haut pour le h1 */
+}
+
+/* Conteneur d'images */
+.image-container {
+    display: flex; /* Utiliser Flexbox pour aligner les images côte à côte */
+    justify-content: space-between; /* Espacer les images de manière égale */
+    align-items: center; /* Aligner les images verticalement au centre */
+    margin: 20px 0; /* Ajouter de l'espace au-dessus et au-dessous du conteneur */
+}
+
+/* Styles pour les images */
+.rachelcenter img, .conteneur img {
+    width: 100%; /* Réduire légèrement la largeur des images pour qu'elles soient plus grandes tout en restant côte à côte */
+    height: auto; /* Conserver les proportions de l'image */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+    object-fit: cover; /* Assurer que l'image couvre le conteneur tout en conservant ses proportions */
+}
+
+/* Ajuster l'espacement entre les images */
+.image-container > div {
+    margin: 0 8px; /* Ajuster l'espace entre les images */
+}
