@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Max.css'; // Assurez-vous que ce fichier CSS est correctement importé // Importez le Navbar
 
 const Max = () => {
