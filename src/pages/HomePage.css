@@ -5,7 +5,7 @@
 .homepage {
   height: 100%; /* Assurer que html et body prennent toute la hauteur de la fenêtre */
   margin: 0; /* Enlever les marges par défaut du navigateur */
-  background-image: url("./src/assets/Accueil.gif"); /* Chemin relatif vers l'image de fond */
+  background-image: url("/src/assets/Accueil.gif"); /* Chemin relatif vers l'image de fond */
   background-size: cover; /* Adapte l'image à la taille de la fenêtre */
   background-repeat: no-repeat; /* Évite la répétition de l'image */
   background-position: center 20%; /* Centre l'image avec un décalage vers le bas */
@@ -19,7 +19,7 @@
   justify-content: center; /* Centrer verticalement le contenu */
   align-items: center; /* Centrer horizontalement le contenu */
   min-height: 100vh; /* Assurer que le body prend au moins la hauteur de la fenêtre */
-  cursor: url("./src/assets/curseur.png"), auto; /* Ajouter l'image comme curseur */
+  cursor: url("/src/assets/curseur.png"), auto; /* Ajouter l'image comme curseur */
 }
 
 /* Assurer que le curseur reste le même pour tous les éléments dans la page d'accueil */
@@ -28,7 +28,7 @@
 .homepage input,
 .homepage textarea,
 .homepage li {
-  cursor: url("./src/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
+  cursor: url("/src/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
 }
 
 /* Style pour les liens */
