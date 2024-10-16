@@ -18,9 +18,9 @@ const Signup = lazy(() => import("./components/Signup"));
 const Profile = lazy(() => import("./pages/Profil")); // Page protégée (Profil)
 
 // Importation paresseuse des composants de gestion des sauces
-const SauceList = lazy(() => import("./components/SauceList")); // Liste des sauces
-const SingleSauce = lazy(() => import("./components/SingleSauce")); // Détails d'une sauce
-const SauceForm = lazy(() => import("./components/SauceForm")); // Création/édition de sauce
+const ProductList = lazy(() => import("./components/ProductList")); // Liste des sauces
+const SingleProduct = lazy(() => import("./components/SingleProduct")); // Détails d'une sauce
+const ProductForm = lazy(() => import("./components/ProductForm")); // Création/édition de sauce
 
 const App = () => {
   return (
@@ -57,11 +57,10 @@ const App = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
             </Route>
-            {/* Routes pour la gestion des sauces */}
-            <Route path="/sauces" element={<SauceList />} />
-        <Route path="/sauces/:id" element={<SingleSauce />} />
-        <Route path="/new-sauce" element={<SauceForm mode="create" />} />
-        <Route path="/modify-sauce/:id" element={<SauceForm mode="modify" />} />
+            <Route path="/products" element={<ProductList />} />
+        <Route path="/products" element={<ProductList />} />
+        <Route path="/products/:id" element={<SingleProduct />} />
+        <Route path="/create" element={<ProductForm />} />
             {/* Route pour les erreurs 404 */}
             <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>

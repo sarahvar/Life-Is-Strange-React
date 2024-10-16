@@ -9,8 +9,11 @@ const pages = {
   chloe: { url: '/chloe', title: 'Fiche de personnage : Chloé' },
   rachel: { url: '/rachel', title: 'Fiche de personnage : Rachel' },
   quiz: { url: '/quiz', title: 'Quiz Interactif' },
-  login: { url: '/login', title: 'Se connecter' },     // Nouveau lien vers Login
-  signup: { url: '/signup', title: "S'inscrire" }      // Nouveau lien vers Signup
+  
+    // login: { url: '/login', title: 'Se connecter' },     // Nouveau lien vers Login
+    // signup: { url: '/signup', title: "S'inscrire" }      // Nouveau lien vers Signup
+  
+  // Nouveau lien vers Login // Nouveau lien vers Signup
 };
 
 const NavBar = () => {

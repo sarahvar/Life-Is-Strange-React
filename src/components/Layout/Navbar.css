@@ -41,3 +41,28 @@ ul.navigation li.active a {
   color: #ffffff;
   font-weight: bold;
 }
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  ul.navigation {
+    padding: 10px 0;
+  }
+
+  ul.navigation li {
+    display: block; /* Permet à chaque élément de navigation de s'afficher en ligne verticale */
+    margin: 10px 0;
+  }
+
+  ul.navigation a {
+    display: block; /* Permet au lien de prendre toute la largeur */
+    width: 100%; /* Le lien s'étend sur toute la largeur disponible */
+    padding: 15px;
+    text-align: center; /* Centre le texte dans chaque lien */
+  }
+
+  ul.navigation a:hover,
+  ul.navigation a.active,
+  ul.navigation li.active a {
+    background-color: #3399ff; /* Ajuste la couleur sur toute la largeur */
+    font-weight: bold;
+  }
+}

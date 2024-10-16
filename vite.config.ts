@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -6,10 +5,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3001' // Redirection des requêtes API vers le backend
+      // Proxy toutes les requêtes API commençant par /api vers le backend Node.js sur le port 3001
+      '/api': 
+         'http://localhost:3001'
     }
   }
 });
+
+
 
 
 

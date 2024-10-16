@@ -31,7 +31,7 @@ function Login() {
         console.log('Login successful. Token stored in localStorage.');
 
         // Redirige vers "new-sauce" après un login réussi
-        navigate('/new-sauce');
+        navigate('/create');
       } else {
         setErrorMsg('Authentication failed: No token provided');
       }

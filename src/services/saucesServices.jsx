@@ -3,7 +3,7 @@ import { apiService } from './apiServices';
 // Obtenir toutes les sauces
 export const getAllSauces = async () => {
   try {
-    return await apiService('/api/sauces');
+    return await apiService('/api/products');
   } catch (error) {
     console.error("Failed to fetch sauces:", error);
     throw error; // Relancer l'erreur ou gérer comme nécessaire
@@ -13,7 +13,7 @@ export const getAllSauces = async () => {
 // Obtenir une sauce par ID
 export const getSauceById = async (id) => {
   try {
-    return await apiService(`/api/sauces/${id}`);
+    return await apiService(`/api/products/${id}`);
   } catch (error) {
     console.error(`Failed to fetch sauce with id ${id}:`, error);
     throw error;
@@ -23,7 +23,7 @@ export const getSauceById = async (id) => {
 // Créer une nouvelle sauce
 export const createSauce = async (sauceData) => {
   try {
-    return await apiService('/api/sauces', {
+    return await apiService('/api/products', {
       method: 'POST',
       body: JSON.stringify(sauceData),
       headers: {
@@ -39,7 +39,7 @@ export const createSauce = async (sauceData) => {
 // Modifier une sauce existante
 export const modifySauce = async (id, sauceData) => {
   try {
-    return await apiService(`/api/sauces/${id}`, {
+    return await apiService(`/api/products/${id}`, {
       method: 'PUT',
       body: JSON.stringify(sauceData),
       headers: {
@@ -55,7 +55,7 @@ export const modifySauce = async (id, sauceData) => {
 // Supprimer une sauce
 export const deleteSauce = async (id) => {
   try {
-    return await apiService(`/api/sauces/${id}`, {
+    return await apiService(`/api/products/${id}`, {
       method: 'DELETE',
     });
   } catch (error) {
@@ -67,7 +67,7 @@ export const deleteSauce = async (id) => {
 // Évaluer une sauce (liker ou disliker)
 export const evaluateSauce = async (id, like) => {
   try {
-    return await apiService(`/api/sauces/${id}/like`, {
+    return await apiService(`/api/products/${id}/like`, {
       method: 'POST',
       body: JSON.stringify({ like }),
       headers: {
