@@ -7,9 +7,8 @@ body {
     color: #333; /* Couleur de texte principale */
     margin: 0;
     padding: 0;
-    cursor: url("/assets/Curseur.png"), auto;
+    cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */
 }
-
 
 h1, h2, h3 {
     color: #003366; /* Couleur sombre pour les titres */
@@ -90,41 +89,61 @@ tbody tr:hover {
 }
 
 /* Style pour les images dans les cellules du tableau */
-td img {
+td div {
     max-width: 120px; /* Ajustez cette largeur selon vos besoins */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    height: 150px; /* Ajustez la hauteur selon vos besoins */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Coins arrondis pour les images */
+    margin: 0 auto; /* Centrer les div */
 }
 
-
-/* Styles utilitaires pour l'alignement */
-.center {
-    text-align: center;
+/* Classes pour les images des personnages */
+.image-chloe {
+    background-image: url('/assets/Chloe-Price.jpg');
 }
 
-.alignRight {
-    text-align: right;
+.image-max {
+    background-image: url('/assets/Maxine-Caulfield.webp');
 }
 
-.left {
-    text-align: left;
+.image-rachel {
+    background-image: url('/assets/Rachel-Amber.webp');
 }
 
-.rachelcenter {
-    text-align: center;
+.image-victoria {
+    background-image: url('/assets/Victoria-Chase.webp');
 }
 
-.red {
-    color: red;
-    font-weight: 700;
+.image-nathan {
+    background-image: url('/assets/Nathan-Prescott.png');
 }
 
-.imgrachel {
-    text-align: center;
+.image-jefferson {
+    background-image: url('/assets/Mark_jefferson.webp');
 }
 
-img.carte {
+.image-joyce {
+    background-image: url('/assets/Joyce-Madsen.jpg');
+}
+
+.image-david {
+    background-image: url('/assets/David-Madsen.jpg');
+}
+
+.image-warren {
+    background-image: url('/assets/Warren-Graham.webp');
+}
+
+.image-kate {
+    background-image: url('/assets/Kate-Marsh.jpg');
+}
+
+/* Image de la carte */
+.carte {
+    background-image: url('/assets/Carte.jpg');
     max-width: 100%;
-    height: auto; /* Maintient les proportions originales de l'image */
+    height: 300px; /* Ajustez la hauteur si nécessaire */
+    background-size: cover;
+    background-position: center;
 }
