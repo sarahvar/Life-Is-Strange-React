@@ -6,7 +6,7 @@ const personnages = [
     nom: 'Chloe, Elizabeth Price',
     date_lieu: 'née le 11 mars 1994 à Arcadia Bay (Oregon), 19 ans',
     description: 'Chloe "la punk aux cheveux bleus" est rebelle, elle n\'aime pas l\'autorité et a une forte personnalité. Elle n\'est pas rancunière et sous ses airs de dure à cuire a un cœur tendre. Elle est quelqu\'un avec un franc-parler et qui sait faire des compliments.',
-    image: 'images/Chloe-Price.jpg'
+    image: '/assets/images/Chloe-Price.jpg'
   },
   {
     nom: 'Max(ine) Caufield',

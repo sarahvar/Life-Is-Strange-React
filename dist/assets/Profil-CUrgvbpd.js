@@ -1,0 +1,1 @@
+import{j as e}from"./index-Kc4CJH8f.js";const o=()=>e.jsxs("div",{children:[e.jsx("h2",{children:"Bienvenue sur votre profil!"}),e.jsx("p",{children:"Ceci est une page protégée que vous ne pouvez voir qu'après vous être connecté."})]});export{o as default};
