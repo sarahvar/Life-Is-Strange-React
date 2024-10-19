@@ -7,13 +7,13 @@ body {
     color: #333; /* Couleur de texte principale */
     margin: 0;
     padding: 0;
-    cursor: url('/src/assets/curseur.png'), auto; /* Ajouter l'image comme curseur */
+    cursor: url("/assets/Curseur.png"), auto;/* Ajouter l'image comme curseur */
     text-align: center; /* Centrer tout le texte dans le corps */
 }
 
 /* Assurer que le curseur reste le même pour tous les éléments */
 a, button, input, textarea, li {
-    cursor: url('/src/assets/curseur.png'), auto; /* Appliquer le curseur personnalisé */
+    cursor: url("/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
 }
 
 /* Supprimer les puces des listes */
