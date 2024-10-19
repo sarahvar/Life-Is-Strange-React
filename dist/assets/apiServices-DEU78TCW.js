@@ -1,1 +1,0 @@
-import{a as t}from"./axios-CCb-kr4I.js";const a="/api/products",p={getSauces:()=>t.get(a),getSauceById:e=>t.get(`${a}/${e}`),createSauce:e=>t.post(a,e),updateSauce:(e,c)=>t.put(`${a}/${e}`,c),deleteSauce:e=>t.delete(`${a}/${e}`)};export{p as a};

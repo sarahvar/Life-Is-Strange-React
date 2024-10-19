@@ -1,12 +1,12 @@
 import React from 'react';
-import './CharacterTable.css'; // Importez les styles
+import './CharacterTable.css'; // Importer les styles
 
 const personnages = [
   {
     nom: 'Chloe, Elizabeth Price',
     date_lieu: 'née le 11 mars 1994 à Arcadia Bay (Oregon), 19 ans',
     description: 'Chloe "la punk aux cheveux bleus" est rebelle, elle n\'aime pas l\'autorité et a une forte personnalité. Elle n\'est pas rancunière et sous ses airs de dure à cuire a un cœur tendre. Elle est quelqu\'un avec un franc-parler et qui sait faire des compliments.',
-    imageClass: 'image-chloe' // Utilise une classe pour l'image
+    imageClass: 'image-chloe'
   },
   {
     nom: 'Max(ine) Caufield',
@@ -83,7 +83,6 @@ const CharacterTable = () => {
               <tr key={index}>
                 <td>
                   <b>{personnage.nom}</b><br />
-                  {/* Remplacer l'image par une div avec une classe */}
                   <div className={personnage.imageClass}></div>
                 </td>
                 <td>{personnage.date_lieu}</td>
@@ -93,13 +92,13 @@ const CharacterTable = () => {
           </tbody>
         </table>
       </div>
+
       <p>
         J'ai tellement de choses à dire sur ce jeu que je ne sais pas par où commencer...
       </p>
-      <div className="carte"></div> {/* Remplacer l'image par une div */}
+      <div className="carte"></div>
     </div>
   );
 };
 
 export default CharacterTable;
-
