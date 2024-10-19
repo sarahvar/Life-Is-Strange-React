@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    cursor: url("/assets/Curseur.png"), auto;
 }
 
 .navbar {
