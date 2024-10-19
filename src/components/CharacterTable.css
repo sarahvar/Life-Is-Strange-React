@@ -7,12 +7,12 @@ body {
     color: #333; /* Couleur de texte principale */
     margin: 0;
     padding: 0;
-    cursor: url('/src/assets/curseur.png'), auto; /* Ajouter l'image comme curseur */
+    cursor: url('/public/images/curseur.png'), auto; /* Ajouter l'image comme curseur */
 }
 
 /* Assurer que le curseur reste le même pour tous les éléments */
 a, button, input, textarea, li {
-    cursor: url('/src/assets/curseur.png'), auto; /* Appliquer le curseur personnalisé */
+    cursor: url('/public/images/curseur.png'), auto; /* Appliquer le curseur personnalisé */
 }
 
 h1, h2, h3 {
