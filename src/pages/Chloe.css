@@ -38,7 +38,22 @@ h3 {
 h4 {
     font-size: 1.5em; /* Taille de police des sous-titres de niveau 4 */
 }
-
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
+    border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
+    padding: 10px; /* Espacement autour du tableau */
+    margin-bottom: 20px; /* Espace en bas si nécessaire */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
+}
 /* Styles pour les divs représentant les images */
 .imgcendrier {
     background-image: url('/assets/Cendrier.jpg'); /* Remplacer avec le chemin de l'image */
