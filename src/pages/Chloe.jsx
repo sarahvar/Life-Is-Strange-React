@@ -1,21 +1,13 @@
 import React from 'react';
 import './Chloe.css'; // Assurez-vous que ce fichier CSS est correctement importé
 
-
 const Chloe = () => {
   return (
     <div>
-
-      <div className="imgcendrier text-center">
-        <img src="/src/assets/Cendrier.jpg" alt="Cendrier" />
-      </div>
-
-      <div className="imganarchie text-center">
-        <img src="/src/assets/Chloe-Anarchie.png" alt="Chloe Anarchie" />
-      </div>
+      <div className="imgcendrier text-center" />
+      <div className="imganarchie text-center" />
 
       <h1 className="text-center">Chloe Elizabeth Price</h1>
-
       <h2 className="text-center">Biographie de Chloe :</h2>
 
       <div className="videocenter text-center">
@@ -46,9 +38,7 @@ const Chloe = () => {
         <li>Yeux bleus</li>
       </ul>
 
-      <div className="conteneur text-center">
-        <img src="/src/assets/Rachel-Papillon.jpg" alt="Rachel Papillon" className="rachel-papillon" />
-      </div>
+      <div className="conteneur text-center" />
 
       <h3 className="text-center">Son rôle dans l'histoire :</h3>
       <h4 className="text-center">Deutéragoniste de Life Is Strange :</h4>
@@ -69,32 +59,44 @@ const Chloe = () => {
         </thead>
         <tbody>
           <tr>
-            <td><b>Max(ine) Caulfield</b><br /><img src="/src/assets/Maxine-Caulfield.webp" height="120" alt="Maxine Caulfield" /></td>
+            <td><b>Max(ine) Caulfield</b><br />
+              <div className="img-max" />
+            </td>
             <td>Elle est sa meilleure amie avant qu'elle parte à Seattle. Elles se connaissent depuis leur enfance.</td>
             <td>Chloe est très attachée à Max. Malgré le départ de Max et son silence, Chloe lui pardonne rapidement à son retour. Chloe est intéressée par Max, leur relation est ambiguë, entre amitié et amour.</td>
           </tr>
           <tr>
-            <td><b>Rachel, Dawn Amber</b><br /><img src="/src/assets/Rachel-Amber.webp" height="120" alt="Rachel Amber" /></td>
+            <td><b>Rachel, Dawn Amber</b><br />
+              <div className="img-rachel" />
+            </td>
             <td>Rachel est l'ange gardien de Chloe. Elle a été là pour Chloe quand elle était seule après la mort de son père et le départ de Max. Elle lui a "sauvé la vie".</td>
             <td>Elles sont en "couple libre", elles s'aiment.</td>
           </tr>
           <tr>
-            <td><b>William Price</b><br /><img src="/src/assets/William-Price.png" height="200" alt="William Price" /></td>
+            <td><b>William Price</b><br />
+              <div className="img-william" />
+            </td>
             <td>Il est le père de Chloe.</td>
             <td>Chloe et lui sont très proches. Il est un père très sympa, et ils s'aiment beaucoup.</td>
           </tr>
           <tr>
-            <td><b>Joyce Madsen</b><br /><img src="/src/assets/Joyce-Madsen.jpg" height="150" alt="Joyce Madsen" /></td>
+            <td><b>Joyce Madsen</b><br />
+              <div className="img-joyce" />
+            </td>
             <td>Elle est la mère de Chloe.</td>
             <td>Leurs relations sont tendues. Elles se disputent souvent, mais elles s'aiment.</td>
           </tr>
           <tr>
-            <td><b>David Madsen</b><br /><img src="/src/assets/David-Madsen.jpg" height="100" alt="David Madsen" /></td>
+            <td><b>David Madsen</b><br />
+              <div className="img-david" />
+            </td>
             <td>Le beau-père.</td>
             <td>Il est un ancien soldat très autoritaire avec Chloe. Ils sont en conflit permanent. Il l'aime mais ne sait pas communiquer avec elle.</td>
           </tr>
           <tr>
-            <td><b>Frank Bowers</b><br /><img src="/src/assets/Frank-Bowers.webp" height="150" alt="Frank Bowers" /></td>
+            <td><b>Frank Bowers</b><br />
+              <div className="img-frank" />
+            </td>
             <td>Le dealer.</td>
             <td>Frank est le dealer de Chloe et lui fournit de la drogue.</td>
           </tr>
@@ -102,7 +104,7 @@ const Chloe = () => {
       </table>
 
       <div className="text-center">
-        <img src="/src/assets/Illuminatis.jpg" height="250" alt="Illuminatis" />
+        <div className="img-illuminatis" />
       </div>
 
       <h3 className="text-center"><strong>Surnoms de Chloe</strong></h3>
@@ -122,8 +124,8 @@ const Chloe = () => {
       </p>
 
       <div className="imgbladerunner">
-        <img src="/src/assets/Blade-Runner.jpg" height="300" width="300" alt="Blade Runner" />
-        <img src="/src/assets/Pisshead.jpg" height="300" width="300" alt="Pisshead" />
+        <div className="img-bladerunner" />
+        <div className="img-pisshead" />
       </div>
     </div>
   );
