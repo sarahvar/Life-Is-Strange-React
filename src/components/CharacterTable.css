@@ -142,8 +142,15 @@ td div {
 /* Image de la carte */
 .carte {
     background-image: url('/assets/Carte.jpg');
-    max-width: 100%;
-    height: 650px; /* Ajustez la hauteur si nécessaire */
-    background-size: cover;
-    background-position: center;
+    width: 100%; /* Assurez-vous que l'image prend toute la largeur */
+    height: 650px; /* La hauteur s'ajuste automatiquement pour garder les proportions */  
+    background-size: cover; /* Couvre tout le conteneur */
+    background-position: center; /* Centre l'image */
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .carte {
+        max-height: 400px; /* Ajustez la hauteur maximale pour les petits écrans */
+    }
 }

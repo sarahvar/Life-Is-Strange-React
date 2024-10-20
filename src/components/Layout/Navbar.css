@@ -54,7 +54,6 @@ ul.navigation li.active a {
 
   ul.navigation a {
     display: block; /* Permet au lien de prendre toute la largeur */
-    width: 100%; /* Le lien s'étend sur toute la largeur disponible */
     padding: 15px;
     text-align: center; /* Centre le texte dans chaque lien */
   }

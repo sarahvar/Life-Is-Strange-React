@@ -16,15 +16,15 @@ a, button, input, textarea, li {
 }
 
 /* Styles pour les titres */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #003366; /* Couleur sombre pour les titres */
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: center; /* Centrer tous les titres */
 }
 
 h1 {
     font-size: 2.5em;
-    text-align: center;
 }
 
 h2 {
@@ -36,13 +36,25 @@ h2 {
 h3 {
     font-size: 1.5em;
     color: #3399ff; /* Couleur bleu clair pour les sous-titres */
-    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.3em; /* Ajout d'un style pour les h4 si nécessaire */
 }
 
 p {
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center; /* Centrer les paragraphes */
 }
+/* Max.css */
+
+ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+  }
+  
 
 /* Style des images */
 img {
@@ -52,20 +64,11 @@ img {
 }
 
 /* Style spécifique pour les images des personnages et autres */
-.maxbiche img {
-    content: url("/assets/Max-Biche.webp"); /* Image de Max-Biche */
-}
-
-.selfiemax img {
-    content: url("/assets/Max-selfies.webp"); /* Image selfie de Max */
-}
-
-.maxguitare img {
-    content: url("/assets/Max-Guitare.jpg"); /* Image de Max avec guitare */
-}
-
+.maxbiche img,
+.selfiemax img,
+.maxguitare img,
 .imgmax img {
-    content: url("/assets/Max-Rembobinage.jpg"); /* Image de Max utilisant le rembobinage */
+    max-width: 100%; /* Assure que les images ne débordent pas */
 }
 
 /* Style pour les images dans les cellules du tableau */
@@ -76,56 +79,31 @@ img {
     margin: 0 auto;
 }
 
-/* Exemple pour chaque image du tableau */
-.tableau-style td img[src*="Chloe-Price.jpg"] {
-    content: url("/assets/Chloe-Price.jpg"); /* Image de Chloe */
-}
-
-.tableau-style td img[src*="Rayan-Caufield.png"] {
-    content: url("/assets/Rayan-Caufield.png"); /* Image de Ryan Caulfield */
-}
-
-.tableau-style td img[src*="Vanessa-Caulfield.webp"] {
-    content: url("/assets/Vanessa-Caulfield.webp"); /* Image de Vanessa Caulfield */
-}
-
-.tableau-style td img[src*="Rachel-Amber.webp"] {
-    content: url("/assets/Rachel-Amber.webp"); /* Image de Rachel Amber */
-}
-
-.tableau-style td img[src*="Warren-Graham.webp"] {
-    content: url("/assets/Warren-Graham.webp"); /* Image de Warren Graham */
-}
-
-.tableau-style td img[src*="Joyce-Madsen.jpg"] {
-    content: url("/assets/Joyce-Madsen.jpg"); /* Image de Joyce Madsen */
-}
-
-.tableau-style td img[src*="Victoria-Chase.webp"] {
-    content: url("/assets/Victoria-Chase.webp"); /* Image de Victoria Chase */
-}
-
-.tableau-style td img[src*="Nathan-Prescott.png"] {
-    content: url("/assets/Nathan-Prescott.png"); /* Image de Nathan Prescott */
-}
-
-.tableau-style td img[src*="Kate-Marsh.jpg"] {
-    content: url("/assets/Kate-Marsh.jpg"); /* Image de Kate Marsh */
-}
-
-.tableau-style td img[src*="Mark_jefferson.webp"] {
-    content: url("/assets/Mark_jefferson.webp"); /* Image de Mr Jefferson */
-}
-
 /* Conteneur flex pour les éléments média */
 .media-container {
     display: flex;
-    justify-content: space-between; /* Espace entre les éléments */
-    align-items: center; /* Aligner les éléments verticalement au centre */
+    flex-direction: column; /* Colonne pour mobile */
+    justify-content: center;
+    align-items: center; /* Centrer les éléments horizontalement */
     margin-top: 20px;
 }
 
 .media-item {
-    flex: 1;
-    margin: 0 10px;
+    margin: 10px 0; /* Espacement entre les éléments */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .media-container {
+        flex-direction: row; /* Ligne pour les écrans plus larges */
+    }
+    .media-item {
+        flex: 1; /* Occuper l'espace disponible */
+        margin: 0 10px; /* Espace latéral pour les écrans larges */
+    }
+}
+
+/* Autres styles */
+.text-center {
+    text-align: center; /* Centrer le texte dans cette classe si nécessaire */
 }
