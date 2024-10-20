@@ -24,6 +24,7 @@ ul, ol {
 
 h1 {
     font-size: 3em; /* Taille de police du titre principal */
+    color: #003366
 }
 
 h2 {
@@ -111,7 +112,7 @@ h4 {
 }
 
 .img-illuminatis {
-    background-image: url('assets/Illuminatis.jpg');
+    background-image: url('/assets/Illuminatis.jpg');
     width: 200px;
     height: 200px;
     margin: 0 auto;
