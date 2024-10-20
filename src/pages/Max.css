@@ -47,8 +47,22 @@ p {
     margin-bottom: 20px;
     text-align: center; /* Centrer les paragraphes */
 }
-/* Max.css */
-
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
+    border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
+    padding: 10px; /* Espacement autour du tableau */
+    margin-bottom: 20px; /* Espace en bas si nécessaire */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
+}
 ul {
     list-style-type: none; /* Enlève les puces */
     padding: 0; /* Enlève le padding par défaut */
