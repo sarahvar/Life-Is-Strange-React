@@ -7,7 +7,7 @@ body {
     color: #333; /* Couleur de texte principale */
     margin: 0;
     padding: 0;
-    cursor: url("/assets/Curseur.png"), auto;
+    cursor: url("/assets/Curseur.png"), auto; /* Utilisation du curseur personnalisé */
 }
 
 /* Assurer que le curseur reste le même pour tous les éléments */
@@ -15,6 +15,7 @@ a, button, input, textarea, li {
     cursor: url("/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
 }
 
+/* Styles pour les titres */
 h1, h2, h3 {
     color: #003366; /* Couleur sombre pour les titres */
     margin-top: 0;
@@ -43,163 +44,88 @@ p {
     margin-bottom: 20px;
 }
 
+/* Style des images */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Style pour le conteneur du tableau */
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
-    background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
-    border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
-    padding: 10px; /* Espacement autour du tableau */
-    margin-bottom: 20px; /* Espace en bas si nécessaire */
+/* Style spécifique pour les images des personnages et autres */
+.maxbiche img {
+    content: url("/assets/Max-Biche.webp"); /* Image de Max-Biche */
 }
 
-/* Style pour le tableau */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
+.selfiemax img {
+    content: url("/assets/Max-selfies.webp"); /* Image selfie de Max */
 }
 
-thead {
-    background-color: #003366;
-    color: #ffffff;
+.maxguitare img {
+    content: url("/assets/Max-Guitare.jpg"); /* Image de Max avec guitare */
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
-    vertical-align: top; /* Aligne le texte en haut des cellules */
-}
-
-th {
-    font-weight: 700;
-    font-size: 1.1em;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-    background-color: #ececec;
-}
-
-/* Style pour les images dans les cellules du tableau */
-td img {
-    max-width: 120px; /* Ajustez cette largeur selon vos besoins */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Style pour centrer le texte */
-.text-center {
-    text-align: center;
-    margin-top: 25px;
-}
-
-/* Enlève les marqueurs des listes non ordonnées */
-ul {
-    list-style-type: none; /* Enlève les marqueurs */
-    padding: 0; /* Supprime le padding par défaut */
-    margin: 0; /* Supprime la marge par défaut */
-  }
-  
-  /* Si vous avez besoin de centrer le texte pour les listes */
-  ul.text-center {
-    text-align: center;
-  }
-  
-/* Assurez-vous que le tableau reste non centré */
-.tableau-style {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
-}
-
-.tableau-style thead {
-    background-color: #003366;
-    color: #ffffff;
-}
-
-.tableau-style th, .tableau-style td {
-    padding: 15px;
-    text-align: left;
-    vertical-align: top; /* Aligne le texte en haut des cellules */
-}
-
-.tableau-style th {
-    font-weight: 700;
-    font-size: 1.1em;
-}
-
-.tableau-style tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.tableau-style tbody tr:hover {
-    background-color: #ececec;
+.imgmax img {
+    content: url("/assets/Max-Rembobinage.jpg"); /* Image de Max utilisant le rembobinage */
 }
 
 /* Style pour les images dans les cellules du tableau */
 .tableau-style td img {
-    max-width: 120px; /* Ajustez cette largeur selon vos besoins */
+    max-width: 120px; /* Ajuster selon la taille requise */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Styles utilitaires pour l'alignement */
-.center {
-    text-align: center;
+/* Exemple pour chaque image du tableau */
+.tableau-style td img[src*="Chloe-Price.jpg"] {
+    content: url("/assets/Chloe-Price.jpg"); /* Image de Chloe */
 }
 
-.alignRight {
-    text-align: right;
+.tableau-style td img[src*="Rayan-Caufield.png"] {
+    content: url("/assets/Rayan-Caufield.png"); /* Image de Ryan Caulfield */
 }
 
-.left {
-    text-align: left;
+.tableau-style td img[src*="Vanessa-Caulfield.webp"] {
+    content: url("/assets/Vanessa-Caulfield.webp"); /* Image de Vanessa Caulfield */
 }
 
-.rachelcenter {
-    text-align: center;
+.tableau-style td img[src*="Rachel-Amber.webp"] {
+    content: url("/assets/Rachel-Amber.webp"); /* Image de Rachel Amber */
 }
 
-.red {
-    color: red;
-    font-weight: 700;
+.tableau-style td img[src*="Warren-Graham.webp"] {
+    content: url("/assets/Warren-Graham.webp"); /* Image de Warren Graham */
 }
 
-.imgrachel {
-    text-align: center;
+.tableau-style td img[src*="Joyce-Madsen.jpg"] {
+    content: url("/assets/Joyce-Madsen.jpg"); /* Image de Joyce Madsen */
 }
 
-img.carte {
-    max-width: 100%;
-    height: auto; /* Maintient les proportions originales de l'image */
+.tableau-style td img[src*="Victoria-Chase.webp"] {
+    content: url("/assets/Victoria-Chase.webp"); /* Image de Victoria Chase */
 }
-/* Ajouter des styles pour la disposition en flexbox */
+
+.tableau-style td img[src*="Nathan-Prescott.png"] {
+    content: url("/assets/Nathan-Prescott.png"); /* Image de Nathan Prescott */
+}
+
+.tableau-style td img[src*="Kate-Marsh.jpg"] {
+    content: url("/assets/Kate-Marsh.jpg"); /* Image de Kate Marsh */
+}
+
+.tableau-style td img[src*="Mark_jefferson.webp"] {
+    content: url("/assets/Mark_jefferson.webp"); /* Image de Mr Jefferson */
+}
+
+/* Conteneur flex pour les éléments média */
 .media-container {
     display: flex;
     justify-content: space-between; /* Espace entre les éléments */
     align-items: center; /* Aligner les éléments verticalement au centre */
-    margin-top: 20px; /* Espacement supérieur pour séparer du contenu précédent */
+    margin-top: 20px;
 }
 
 .media-item {
-    flex: 1; /* Chaque élément prendra une part égale de l'espace disponible */
-    margin: 0 10px; /* Espacement latéral pour les deux éléments */
+    flex: 1;
+    margin: 0 10px;
 }
