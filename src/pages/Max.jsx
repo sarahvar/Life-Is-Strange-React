@@ -14,7 +14,7 @@ const Max = () => {
     <div>
       <div className="maxbiche text-center">
         {/* Image depuis public/assets */}
-        <img src="/assets/max-biche.jpg" alt="Max Biche" />
+        <img src="/assets/Max-Biche.webp" alt="Max Biche" />
       </div>
 
       <h1 className="bleu text-center">Maxine Caulfield</h1>
@@ -40,7 +40,7 @@ const Max = () => {
       </ul>
 
       <div className="maxguitare text-center">
-        <img src="/assets/max-guitare.jpg" height="200" alt="Max avec guitare" />
+        <img src="/assets/Max-Guitare.jpg" height="200" alt="Max avec guitare" />
       </div>
 
       <h3 className="text-center">Son rôle dans l'histoire :</h3>
@@ -154,12 +154,12 @@ const Max = () => {
       </p>
       <div className="journalmax text-center media-container">
         <div className="media-item">
-          <img src="/assets/Max-Journal.webp" height="315" alt="Journal de Max" />
+          <img src="/assets/Max-Journal.webp" height="200" alt="Journal de Max" />
         </div>
         <div className="media-item">
           <iframe
-            width="560"
-            height="315"
+            width="315"
+            height="200"
             src="https://www.youtube.com/embed/4rM8doRu5Sc"
             title="YouTube video player"
             frameBorder="0"
