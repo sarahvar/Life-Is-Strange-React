@@ -24,7 +24,7 @@ const AudioPlayer = () => {
     <div>
       {/* Balise audio */}
       <audio ref={audioRef} loop>
-      <source src="/public/assets/Life Is Strange Soundtrack.mp3" type="audio/mpeg" />
+      <source src="/assets/life-is-strange-soundtrack.mp3" type="audio/mpeg" />
         Votre navigateur ne supporte pas la balise audio.
       </audio>
       
