@@ -77,8 +77,11 @@ const RachelPage = () => {
           <ul>
             <li>Elle guide Max</li>
           </ul>
-          <img src="/assets/Biche.jpg" alt="Rachel guidant Max" />
-
+          <img
+            className="biche-img"
+            src="/assets/Biche.jpg"
+            alt="Rachel guidant Max"
+          />
           <div className="centertext">
             <h2>Les personnages liés à Rachel:</h2>
           </div>
@@ -104,7 +107,8 @@ const RachelPage = () => {
                 </td>
                 <td>Elle est sa meilleure amie et amoureuse probablement</td>
                 <td>
-                  Elles sont très proches, Chloe dit même : "qu'elles s'aimaient"
+                  Elles sont très proches, Chloe dit même : "qu'elles
+                  s'aimaient"
                 </td>
               </tr>
               <tr>
