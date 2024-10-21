@@ -1,25 +1,182 @@
-/* Cible uniquement le h1 avec la classe "rachel-heading" */
-.rachel-heading {
-    margin-top: 50px; /* Réduit la marge en haut pour le h1 */
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* Définition des variables CSS */
+:root {
+    --main-bg-color: #f0f8ff;
+    --main-text-color: #333;
+    --heading-color: #003366;
+    --subheading-color: #3399ff;
+    --card-bg-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Conteneur d'images */
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+    cursor: url(/assets/Curseur.png), auto;
+    text-align: center;
+}
+
+/* Supprimer les puces des listes */
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--heading-color);
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--subheading-color);
+}
+
+/* Styles pour les conteneurs d'images */
 .image-container {
-    display: flex; /* Utiliser Flexbox pour aligner les images côte à côte */
-    justify-content: space-between; /* Espacer les images de manière égale */
-    align-items: center; /* Aligner les images verticalement au centre */
-    margin: 20px 0; /* Ajouter de l'espace au-dessus et au-dessous du conteneur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
 }
 
-/* Styles pour les images */
-.rachelcenter img, .conteneur img {
-    width: 100%; /* Réduire légèrement la largeur des images pour qu'elles soient plus grandes tout en restant côte à côte */
-    height: auto; /* Conserver les proportions de l'image */
-    border-radius: 8px; /* Ajouter des coins arrondis */
-    object-fit: cover; /* Assurer que l'image couvre le conteneur tout en conservant ses proportions */
+.rachelcenter {
+    background-image: url("/dist/assets/Rachel-Amber-BTS.webp");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: transform 0.3s; /* Effet de transition */
 }
 
-/* Ajuster l'espacement entre les images */
-.image-container > div {
-    margin: 0 8px; /* Ajuster l'espace entre les images */
+.rachelcenter:hover {
+    transform: scale(1.05); /* Zoom au survol */
+}
+
+.conteneur {
+    background-image: url("/dist/assets/Masque-Théâtre.jpg");
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.conteneur:hover {
+    transform: scale(1.05);
+}
+
+.imgrachel {
+    background-image: url("/dist/assets/Recherche-Rachel-Amber.png");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rachel-guide {
+    background-image: url("/dist/assets/Biche.jpg");
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.centertext {
+    text-align: center;
+}
+
+/* Styles pour les images des personnages */
+.chloe-image {
+    background-image: url("/assets/Chloe-Price.jpg");
+    background-size: cover;
+    width: 100px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.joyce-image {
+    background-image: url("/assets/Joyce-Madsen.jpg");
+    background-size: cover;
+    width: 100px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.victoria-image {
+    background-image: url("/assets/Victoria-Chase.webp");
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.nathan-image {
+    background-image: url("/assets/Nathan-Prescott.png");
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.jefferson-image {
+    background-image: url("/assets/Mark_jefferson.webp");
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.frank-image {
+    background-image: url("/assets/Frank-Bowers.webp");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.tattoo-image {
+    background-image: url("/assets/Tatouage-de-Rachel.jpg");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/* Styles pour la table */
+.tableau-style {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--card-bg-color);
+}
+
+.tableau-style th,
+.tableau-style td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.tableau-style th {
+    background-color: #e3f2fd; /* Couleur d'en-tête de tableau */
 }
