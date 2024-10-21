@@ -167,6 +167,7 @@ table {
     .imgcendrier, .imganarchie {
         width: 100px; /* Prend 90% de la largeur de l'écran */
         height: 100px; /* Hauteur automatique pour garder le ratio */
+        padding-left: 5rem;
     }
 
     .img-bladerunner, .img-pisshead {
@@ -185,6 +186,7 @@ table {
     .imgcendrier, .imganarchie {
         width: 70px; /* Prend 100% de la largeur de l'écran sur mobile */
         height: 100px; /* Ajuste automatiquement la hauteur */
+        padding-left: 5rem;
     }
 
     .img-bladerunner, .img-pisshead {
