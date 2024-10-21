@@ -9,13 +9,13 @@ const RachelPage = () => {
         {/* Conteneur d'images */}
         <div className="image-container">
           <div className="rachelcenter">
-            <img src="/src/assets/Rachel-Amber-BTS.webp" alt="Rachel Amber" />
+            <img src="/dist/assets/Rachel-Amber-BTS.webp" alt="Rachel Amber" />
           </div>
 
           <div className="conteneur">
             <img
               className="alignRight"
-              src="/src/assets/Masque-Théâtre.jpg"
+              src="/dist/assets/Masque-Théâtre.jpg"
               height="200"
               alt="Rachel Amber Art"
             />
@@ -67,7 +67,7 @@ const RachelPage = () => {
 
           <div className="imgrachel">
             <img
-              src="src/assets/Recherche-Rachel-Amber.png"
+              src="dist/assets/Recherche-Rachel-Amber.png"
               height="400"
               alt="Avis de recherche de Rachel Amber"
             />
@@ -77,7 +77,7 @@ const RachelPage = () => {
           <ul>
             <li>Elle guide Max</li>
           </ul>
-          <img src="/src/assets/Biche.jpg" alt="Rachel guidant Max" />
+          <img src="/dist/assets/Biche.jpg" alt="Rachel guidant Max" />
 
           <div className="centertext">
             <h2>Les personnages liés à Rachel:</h2>
@@ -111,7 +111,7 @@ const RachelPage = () => {
                 <td>
                   <b>Joyce Madsen</b>
                   <br />
-                  <img src="/src/assets/Joyce-Madsen.jpg" alt="Joyce Madsen" />
+                  <img src="/dist/assets/Joyce-Madsen.jpg" alt="Joyce Madsen" />
                 </td>
                 <td>Elle est la mère de Chloé, sa meilleure amie</td>
                 <td>
@@ -124,7 +124,7 @@ const RachelPage = () => {
                   <b>Victoria Chase</b>
                   <br />
                   <img
-                    src="/src/assets/Victoria-Chase.webp"
+                    src="/dist/assets/Victoria-Chase.webp"
                     height="125"
                     alt="Victoria Chase"
                   />
@@ -140,7 +140,7 @@ const RachelPage = () => {
                   <b>Nathan, Joshua Prescott</b>
                   <br />
                   <img
-                    src="/src/assets/Nathan-Prescott.png"
+                    src="/dist/assets/Nathan-Prescott.png"
                     height="125"
                     alt="Nathan Prescott"
                   />
@@ -153,7 +153,7 @@ const RachelPage = () => {
                   <b>Mr Jefferson</b>
                   <br />
                   <img
-                    src="/src/assets/Mark_jefferson.webp"
+                    src="/dist/assets/Mark_jefferson.webp"
                     height="125"
                     alt="Mr Jefferson"
                   />
@@ -166,7 +166,7 @@ const RachelPage = () => {
                   <b>Frank Bowers</b>
                   <br />
                   <img
-                    src="/src/assets/Frank-Bowers.webp"
+                    src="/dist/assets/Frank-Bowers.webp"
                     height="200"
                     alt="Frank Bowers"
                   />
@@ -214,7 +214,7 @@ const RachelPage = () => {
 
           <div className="center">
             <img
-              src="/src/assets/Tatouage-de-Rachel.jpg"
+              src="/dist/assets/Tatouage-de-Rachel.jpg"
               height="400"
               alt="Tatouage de Rachel"
             />
