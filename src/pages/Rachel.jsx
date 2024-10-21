@@ -15,7 +15,7 @@ const RachelPage = () => {
           <div className="conteneur">
             <img
               className="alignRight"
-              src="/dist/assets/Masque-Théâtre.jpg"
+              src="/assets/Masque-Théâtre.jpg"
               height="200"
               alt="Rachel Amber Art"
             />
@@ -67,7 +67,7 @@ const RachelPage = () => {
 
           <div className="imgrachel">
             <img
-              src="dist/assets/Recherche-Rachel-Amber.png"
+              src="/assets/Recherche-Rachel-Amber.png"
               height="400"
               alt="Avis de recherche de Rachel Amber"
             />
@@ -77,7 +77,7 @@ const RachelPage = () => {
           <ul>
             <li>Elle guide Max</li>
           </ul>
-          <img src="/dist/assets/Biche.jpg" alt="Rachel guidant Max" />
+          <img src="/assets/Biche.jpg" alt="Rachel guidant Max" />
 
           <div className="centertext">
             <h2>Les personnages liés à Rachel:</h2>
