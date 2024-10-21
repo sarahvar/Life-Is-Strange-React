@@ -9,7 +9,9 @@ body {
     padding: 0;
     cursor: url(/assets/Curseur.png), auto;
     text-align: center;
+    font-size: 16px; /* Taille de police de base */
 }
+
 /* Supprimer les puces des listes */
 ul, ol {
     list-style-type: none;
@@ -18,7 +20,7 @@ ul, ol {
 
 h1 {
     font-size: 3em; /* Taille de police du titre principal */
-    color: #003366
+    color: #003366;
 }
 
 h2 {
@@ -33,6 +35,7 @@ h3 {
 h4 {
     font-size: 1.5em; /* Taille de police des sous-titres de niveau 4 */
 }
+
 /* Images dans le tableau de personnages */
 .tableau-style img {
     width: 100px;
@@ -42,6 +45,7 @@ h4 {
     background-position: center;
     border-radius: 8px;
 }
+
 .table-container {
     width: 100%;
     overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
@@ -50,6 +54,7 @@ h4 {
     padding: 10px; /* Espacement autour du tableau */
     margin-bottom: 20px; /* Espace en bas si nécessaire */
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -83,4 +88,74 @@ table {
 /* Ajuster l'espacement entre les images */
 .image-container > div {
     margin: 0 8px; /* Ajuster l'espace entre les images */
+}
+
+
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Réduire la taille de police pour les petits écrans */
+    }
+    
+    .rachel-heading {
+        font-size: 2.5em; /* Réduire la taille du h1 */
+    }
+
+    .image-container {
+        flex-direction: column; /* Aligner les images verticalement */
+        align-items: center; /* Centrer les images */
+    }
+
+    .conteneur, .rachelcenter {
+        margin: 10px 0; /* Ajouter de l'espace entre les images */
+    }
+
+    .imgrachel img,
+    .center img {
+        width: 100%; /* Utiliser 100% de la largeur pour les images */
+        height: auto; /* Conserver les proportions */
+    }
+
+    table {
+        font-size: 14px; /* Réduire la taille de la police dans le tableau */
+    }
+
+    th, td {
+        padding: 10px; /* Ajouter de l'espace autour des cellules du tableau */
+        text-align: center; /* Centrer le texte dans le tableau */
+    }
+    .biche-img {
+        width: 100%; /* Prendre 100% de la largeur du conteneur */
+        height: auto; /* Conserver les proportions de l'image */
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media (max-width: 480px) {
+    .rachel-heading {
+        font-size: 2em; /* Réduire encore la taille du h1 */
+    }
+
+    h2, h3 {
+        font-size: 1.5em; /* Réduire les titres */
+    }
+
+    h4 {
+        font-size: 1.2em; /* Réduire encore les sous-titres */
+    }
+
+    p {
+        font-size: 14px; /* Réduire la taille de police des paragraphes */
+    }
+
+    ul, ol {
+        padding-left: 20px; /* Ajouter un léger remplissage aux listes */
+    }
+    /* Styles pour l'image de biche */
+.biche-img {
+    width: 100%; /* Prendre 100% de la largeur du conteneur */
+    height: auto; /* Conserver les proportions de l'image */
+    border-radius: 8px;
+}
 }
