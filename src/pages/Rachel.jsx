@@ -9,7 +9,7 @@ const RachelPage = () => {
         {/* Conteneur d'images */}
         <div className="image-container">
           <div className="rachelcenter">
-            <img src="/dist/assets/Rachel-Amber-BTS.webp" alt="Rachel Amber" />
+            <img src="/assets/Rachel-Amber-BTS.webp" alt="Rachel Amber" />
           </div>
 
           <div className="conteneur">
