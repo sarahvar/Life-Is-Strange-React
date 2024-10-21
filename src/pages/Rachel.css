@@ -33,6 +33,15 @@ h3 {
 h4 {
     font-size: 1.5em; /* Taille de police des sous-titres de niveau 4 */
 }
+/* Images dans le tableau de personnages */
+.tableau-style img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
 .table-container {
     width: 100%;
     overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
