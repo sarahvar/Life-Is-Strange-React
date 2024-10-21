@@ -165,7 +165,7 @@ table {
 /* Pour les tablettes et mobiles */
 @media (max-width: 768px) {
     .imgcendrier, .imganarchie {
-        width: 100px; /* Prend 90% de la largeur de l'écran */
+        width: 165px; /* Prend 90% de la largeur de l'écran */
         height: 100px; /* Hauteur automatique pour garder le ratio */
         padding-left: 5rem;
     }
