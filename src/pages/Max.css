@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: url("/assets/Curseur.png"), auto; /* Utilisation du curseur personnalisé */
+    overflow-x: hidden; /* Empêche le défilement horizontal sur le body */
 }
 
 /* Assurer que le curseur reste le même pour tous les éléments */
@@ -47,14 +48,16 @@ p {
     margin-bottom: 20px;
     text-align: center; /* Centrer les paragraphes */
 }
+
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    overflow-x: hidden; /* Empêche le défilement horizontal dans le conteneur de tableau */
     background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
     border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
     padding: 10px; /* Espacement autour du tableau */
     margin-bottom: 20px; /* Espace en bas si nécessaire */
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -63,18 +66,20 @@ table {
     border: 1px solid #ddd;
     table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
 }
+
 ul {
     list-style-type: none; /* Enlève les puces */
     padding: 0; /* Enlève le padding par défaut */
     margin: 0; /* Enlève la marge par défaut */
-  }
-  
+}
 
 /* Style des images */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%; /* Assurer que toutes les images ne débordent pas */
+    height: auto; /* Conserve le ratio d'aspect de l'image */
+    display: block; /* Affiche chaque image comme un bloc pour éviter l'espacement des images en ligne */
+    margin: 0 auto; /* Centre les images */
+    border-radius: 8px; /* Coins arrondis pour toutes les images */
 }
 
 /* Style spécifique pour les images des personnages et autres */
