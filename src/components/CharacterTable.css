@@ -8,6 +8,11 @@ body {
     margin: 0;
     padding: 0;
     cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+* {
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur totale */
 }
 
 h1, h2, h3 {
@@ -152,5 +157,31 @@ td div {
 @media (max-width: 768px) {
     .carte {
         max-height: 400px; /* Ajustez la hauteur maximale pour les petits écrans */
+    }
+
+    .table-container {
+        padding: 5px; /* Réduire le padding pour les petits écrans */
+        overflow-x: auto; /* Permet le défilement horizontal si le tableau dépasse la largeur */
+    }
+
+    table {
+        font-size: 0.9em; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    th, td {
+        padding: 10px; /* Réduire le padding des cellules */
+    }
+
+    td div {
+        max-width: 80px; /* Réduire la largeur maximale pour les images */
+        height: 100px; /* Réduire la hauteur des images */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Ajuster la taille des titres */
+    }
+
+    p {
+        font-size: 0.9em; /* Réduire la taille de la police pour les paragraphes */
     }
 }
