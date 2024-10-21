@@ -170,6 +170,13 @@ td div {
 
     th, td {
         padding: 10px; /* Réduire le padding des cellules */
+        display: block; /* Affiche les cellules comme des blocs pour un meilleur affichage */
+        width: 100%; /* Prend toute la largeur disponible */
+        box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale */
+    }
+
+    td {
+        margin-bottom: 10px; /* Espacement entre les cellules */
     }
 
     td div {
