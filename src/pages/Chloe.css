@@ -11,12 +11,10 @@ body {
     text-align: center; /* Centrer tout le texte dans le corps */
 }
 
-/* Assurer que le curseur reste le même pour tous les éléments */
 a, button, input, textarea, li {
     cursor: url("/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
 }
 
-/* Supprimer les puces des listes */
 ul, ol {
     list-style-type: none;
     padding-left: 0; /* Supprimer le retrait à gauche des listes */
@@ -24,7 +22,7 @@ ul, ol {
 
 h1 {
     font-size: 3em; /* Taille de police du titre principal */
-    color: #003366
+    color: #003366;
 }
 
 h2 {
@@ -38,98 +36,66 @@ h3 {
 h4 {
     font-size: 1.5em; /* Taille de police des sous-titres de niveau 4 */
 }
+
+/* Responsiveness des titres */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
-    background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
-    border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
-    padding: 10px; /* Espacement autour du tableau */
-    margin-bottom: 20px; /* Espace en bas si nécessaire */
+    overflow-x: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #ffffff;
     border: 1px solid #ddd;
-    table-layout: auto; /* Ajuste la largeur des colonnes en fonction du contenu */
-}
-/* Styles pour les divs représentant les images */
-.imgcendrier {
-    background-image: url('/assets/Cendrier.jpg'); /* Remplacer avec le chemin de l'image */
-    width: 600px; /* Largeur de l'image */
-    height: 300px; /* Hauteur de l'image */
-    margin: 2rem auto; /* Centrer horizontalement */
-    background-size: cover; /* Adapter l'image pour couvrir le div */
-    background-position: center; /* Centrer l'image dans le div */
+    table-layout: auto;
 }
 
+/* Styles pour les divs représentant les images */
+.imgcendrier,
 .imganarchie {
-    background-image: url('/assets/Chloe-Anarchie.png'); /* Remplacer avec le chemin de l'image */
     width: 600px;
     height: 300px;
+    margin: 2rem auto;
     background-size: cover;
     background-position: center;
 }
 
-.img-max {
-    background-image: url('/assets/Maxine-Caulfield.webp');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
+/* Responsiveness des images */
+@media (max-width: 768px) {
+    .imgcendrier,
+    .imganarchie {
+        width: 90%;
+        height: auto; /* Ajuste automatiquement la hauteur */
+    }
 }
 
-.img-rachel {
-    background-image: url('/assets/Rachel-Amber.webp');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-}
-
-.img-william {
-    background-image: url('/assets/William-Price.png');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-}
-
-.img-joyce {
-    background-image: url('/assets/Joyce-Madsen.jpg');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-}
-
-.img-david {
-    background-image: url('/assets/David-Madsen.jpg');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-}
-
-.img-frank {
-    background-image: url('/assets/Frank-Bowers.webp');
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-}
-
+.img-max,
+.img-rachel,
+.img-william,
+.img-joyce,
+.img-david,
+.img-frank,
 .img-illuminatis {
-    background-image: url('/assets/Illuminatis.jpg');
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
@@ -137,28 +103,42 @@ table {
 
 .imgbladerunner {
     display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Ajouter un espace au-dessus des images */
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-.img-bladerunner {
-    background-image: url('/assets/Blade-Runner.jpg');
-    width: 345px;
-    height: 475px;
-    background-size: cover;
-    background-position: center;
-}
-
+/* Responsiveness des images "Blade Runner" et "Pisshead" */
+.img-bladerunner,
 .img-pisshead {
-    background-image: url('/assets/Pisshead.jpg');
     width: 345px;
     height: 475px;
     background-size: cover;
     background-position: center;
 }
 
-/* Autres styles */
+@media (max-width: 1024px) {
+    .img-bladerunner,
+    .img-pisshead {
+        width: 45%;
+        height: auto; /* Hauteur dynamique pour correspondre à la largeur */
+    }
+}
+
+@media (max-width: 768px) {
+    .img-bladerunner,
+    .img-pisshead {
+        width: 90%;
+        height: auto;
+    }
+}
+
 .conteneur {
-    margin: 20px 0; /* Ajouter une marge autour du conteneur */
+    margin: 20px 0;
+}
+
+/* Ajout de padding pour petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
 }
