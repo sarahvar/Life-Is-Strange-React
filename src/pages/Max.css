@@ -126,3 +126,42 @@ img {
 .text-center {
     text-align: center; /* Centrer le texte dans cette classe si nécessaire */
 }
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .carte {
+        max-height: 400px; /* Ajustez la hauteur maximale pour les petits écrans */
+    }
+
+    .table-container {
+        padding: 5px; /* Réduire le padding pour les petits écrans */
+        overflow-x: auto; /* Permet le défilement horizontal si le tableau dépasse la largeur */
+    }
+
+    table {
+        font-size: 0.9em; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    th, td {
+        padding: 10px; /* Réduire le padding des cellules */
+        display: block; /* Affiche les cellules comme des blocs pour un meilleur affichage */
+        width: 100%; /* Prend toute la largeur disponible */
+        box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale */
+    }
+
+    td {
+        margin-bottom: 10px; /* Espacement entre les cellules */
+    }
+
+    td div {
+        max-width: 80px; /* Réduire la largeur maximale pour les images */
+        height: 100px; /* Réduire la hauteur des images */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Ajuster la taille des titres */
+    }
+
+    p {
+        font-size: 0.9em; /* Réduire la taille de la police pour les paragraphes */
+    }
+}
