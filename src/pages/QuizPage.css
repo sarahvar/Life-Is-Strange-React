@@ -53,6 +53,7 @@ button:hover {
 .answers {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .answers li {
