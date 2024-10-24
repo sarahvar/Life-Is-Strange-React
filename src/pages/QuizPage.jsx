@@ -18,7 +18,7 @@ const shuffleArray = (array) => {
 // Liste des questions pour l'exemple
 const initialQuestions = [
   {
-    question: 'Quel est le nom complet de Max Caulfield ?',
+    question: 'Quel est le nom complet de Max ?',
     answers: ['Maxine Caulfield', 'Max Caulfield', 'Maxine Carter', 'Max Carter'],
     correct: 0
   },

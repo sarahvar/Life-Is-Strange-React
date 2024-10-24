@@ -1,3 +1,6 @@
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 /* Styles généraux */
 body {
     font-family: 'Gloria Hallelujah', sans-serif;
@@ -5,15 +8,18 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    cursor: url("/assets/Curseur.png"), auto;
 }
 
 .navbar {
     padding: 0 !important;
 }
-
-h1, h3 {
+h1{
     text-align: center;
+    color: #003366
+}
+h3 {
+    text-align: center;
+    color: #3399ff;
 }
 
 button {
