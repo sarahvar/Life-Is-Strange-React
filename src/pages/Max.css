@@ -49,6 +49,11 @@ p {
     text-align: center; /* Centrer les paragraphes */
     padding: 1rem
 }
+th, td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top; /* Aligne le texte en haut des cellules */
+}
 thead {
     background-color: #003366;
     color: #ffffff;
