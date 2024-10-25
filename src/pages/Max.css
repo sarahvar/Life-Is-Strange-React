@@ -47,6 +47,7 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center; /* Centrer les paragraphes */
+    padding: 1rem
 }
 
 .table-container {

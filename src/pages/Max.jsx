@@ -294,8 +294,8 @@ const Max = () => {
         </div>
         <div className="media-item">
           <iframe
-            width="560"
-            height="315"
+            width="375"
+            height="200"
             src="https://www.youtube.com/embed/mpRhaXfvG_0?si=v-Z283yh6oeKi8B0"
             title="YouTube video player"
             frameborder="0"
