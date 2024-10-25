@@ -4,7 +4,7 @@ import './Chloe.css'; // Assurez-vous que ce fichier CSS est correctement import
 const Chloe = () => {
   return (
     <div>
-       <h1 className="text-center">Chloe Elizabeth Price</h1>
+      <h1 className="text-center">Chloe Elizabeth Price</h1>
       <div className="imgcendrier text-center" />
       <div className="imganarchie text-center" />
 
