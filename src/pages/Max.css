@@ -58,6 +58,7 @@ thead {
     overflow-x: hidden; /* Empêche le défilement horizontal dans le conteneur de tableau */
     background-color: #f9f9f9; /* Couleur de fond du conteneur du tableau */
     border-radius: 8px; /* Coins arrondis pour le conteneur du tableau */
+    padding: 10px; /* Espacement autour du tableau */
     margin-bottom: 20px; /* Espace en bas si nécessaire */
 }
 
@@ -135,7 +136,7 @@ img {
     }
 
     .table-container {
-        padding: 10px; /* Réduire le padding pour les petits écrans */
+        padding: 5px; /* Réduire le padding pour les petits écrans */
         overflow-x: auto; /* Permet le défilement horizontal si le tableau dépasse la largeur */
     }
 
