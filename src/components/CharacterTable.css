@@ -58,7 +58,13 @@ img {
     padding: 10px; /* Espacement autour du tableau */
     margin-bottom: 20px; /* Espace en bas si nécessaire */
 }
-
+.intro-text, .conclusion-text {
+    font-size: 1.1em;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 1rem
+  }
 /* Style pour le tableau */
 table {
     width: 100%;
