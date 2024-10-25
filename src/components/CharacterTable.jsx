@@ -59,7 +59,8 @@ const CharacterTable = () => {
       <p className="conclusion-text">
         J'ai tellement de choses à dire sur ce jeu que je ne sais pas par où commencer...
       </p>
-    </div>
+      <div className="carte"></div>
+      </div>
   );
 };
 
