@@ -38,6 +38,10 @@ h3 {
 h4 {
     font-size: 1.5em; /* Taille de police des sous-titres de niveau 4 */
 }
+thead {
+    background-color: #003366;
+    color: #ffffff;
+}
 .table-container {
     width: 100%;
     overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
