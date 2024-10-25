@@ -11,8 +11,6 @@ const Max = () => {
   };
 
   return (
-
-    
     <div>
       <h1 className="bleu text-center">Maxine Caulfield</h1>
       <div className="maxbiche text-center">
@@ -71,7 +69,6 @@ const Max = () => {
           {showSpoil && <span>Elle sauve Arcadia Bay ou Chloe</span>}
         </li>
       </ul>
-
       <div className="centertext text-center">
         <h2>Les personnages liés à Max :</h2>
       </div>
@@ -101,10 +98,10 @@ const Max = () => {
                 connaissent depuis leur enfance.
               </td>
               <td>
-                Max est très attachée à Chloe, on voit que Max s'est sentie
-                coupable de son départ. Max est attachée à Chloe ; en fonction
-                des choix du jeu, Max peut ressentir plus que de l'amitié pour
-                Chloe.
+                  Max est très attachée à Chloe, on voit que Max s'est sentie
+                  coupable de son départ. <br />
+                  Max est attachée à Chloe ; en fonction des choix du jeu, Max
+                  peut ressentir plus que de l'amitié pour Chloe.
               </td>
             </tr>
             <tr>
