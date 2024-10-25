@@ -69,6 +69,7 @@ const Max = () => {
           {showSpoil && <span>Elle sauve Arcadia Bay ou Chloe</span>}
         </li>
       </ul>
+
       <div className="centertext text-center">
         <h2>Les personnages liés à Max :</h2>
       </div>
@@ -292,7 +293,7 @@ const Max = () => {
         </div>
         <div className="media-item">
           <iframe
-            width="375"
+            width="300"
             height="200"
             src="https://www.youtube.com/embed/mpRhaXfvG_0?si=v-Z283yh6oeKi8B0"
             title="YouTube video player"
