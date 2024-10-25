@@ -36,6 +36,7 @@ h3 {
     font-size: 1.5em;
     color: #3399ff; /* Couleur bleu clair pour les sous-titres */
     margin-bottom: 10px;
+    padding-top: 1rem;
 }
 
 p {
