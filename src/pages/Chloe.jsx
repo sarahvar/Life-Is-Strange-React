@@ -53,8 +53,8 @@ const Chloe = () => {
         <thead>
           <tr>
             <th>Nom du personnage</th>
-            <th>Lien avec Chloe</th>
-            <th>Relation avec Chloe</th>
+            <th>Lien avec Chloé</th>
+            <th>Relation avec Chloé</th>
           </tr>
         </thead>
         <tbody>
