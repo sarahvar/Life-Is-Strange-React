@@ -195,26 +195,20 @@ const RachelPage = () => {
             <strong>Son tatouage et sa signification</strong>
           </h3>
           <p>
-            Rachel a un tatouage de dragon sur son mollet droit. Le symbole du
-            dragon est lié à la renommée, la réputation et la carrière ainsi que
-            la force et la puissance, qui sont tous applicables à la
-            personnalité et à l'histoire de Rachel. Le symbole du dragon incarne
-            aussi le désir et la passion sexuelle. En outre, les dragons en
-            Orient sont associés à la sagesse, la longévité et la régénération,
-            ce qui se réfère à ses performances académiques et intellectuelles,
-            mais aussi à sa persistance dans les cœurs et les souvenirs de la
-            plupart des gens à Arcadia Bay et son omniprésence sur la ville. Le
-            dragon est également connu pour servir de puissant gardien et guide,
-            ce qui fait référence au rôle que Rachel a joué dans la vie de
-            Chloe, mais aussi aux conseils que Rachel fournit indirectement à
-            Max tout au long du jeu. Les dragons sont des messagers de
-            l'équilibre et de la magie, nous encourageant à voir le monde à
-            travers les yeux du mystère et de l'émerveillement, et ils sont
-            aussi l'incarnation du pouvoir primordial. En alchimie, le dragon
-            représente le chaos-monde qui contient un certain potentiel de
-            l'ordre; le dragon est alors symbole de l'énergie primordiale. Le
-            mot dragon veut dire "voir clair"; "regard perçant".
-          </p>
+  Rachel a un tatouage de dragon sur son mollet droit. Le symbole du dragon est lié à la renommée, la réputation et la carrière, ainsi qu'à la force et la puissance — des qualités qui reflètent parfaitement la personnalité et l'histoire de Rachel.
+</p>
+
+<p>
+  Le dragon incarne aussi le désir et la passion. Dans la culture orientale, les dragons sont associés à la sagesse, la longévité et la régénération, ce qui fait écho aux performances académiques et intellectuelles de Rachel. Ce symbole représente aussi sa persistance dans les cœurs des gens d'Arcadia Bay, et son omniprésence dans la ville.
+</p>
+
+<p>
+  Le dragon est également un puissant gardien et guide, rappelant le rôle important de Rachel dans la vie de Chloe, ainsi que les conseils qu'elle fournit indirectement à Max tout au long du jeu. Les dragons sont des messagers de l'équilibre et de la magie, encourageant à voir le monde à travers les yeux du mystère et de l'émerveillement.
+</p>
+
+<p>
+  Enfin, les dragons sont l'incarnation du pouvoir primordial. En alchimie, ils représentent le chaos-monde contenant un potentiel d'ordre : un symbole d'énergie brute et essentielle. D'ailleurs, le mot dragon signifie "voir clair" et "regard perçant".
+</p>
 
           <div className="center">
             <img
