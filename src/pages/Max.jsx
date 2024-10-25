@@ -11,13 +11,14 @@ const Max = () => {
   };
 
   return (
+
+    
     <div>
+       <h1 className="bleu text-center">Maxine Caulfield</h1>
       <div className="maxbiche text-center">
         {/* Image depuis public/assets */}
         <img src="/assets/Max-Biche.webp" alt="Max Biche" />
       </div>
-
-      <h1 className="bleu text-center">Maxine Caulfield</h1>
 
       <h2 className="text-center">Biographie de Max :</h2>
       <div className="selfiemax text-center">

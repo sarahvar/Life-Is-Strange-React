@@ -4,10 +4,10 @@ import './Chloe.css'; // Assurez-vous que ce fichier CSS est correctement import
 const Chloe = () => {
   return (
     <div>
+       <h1 className="text-center">Chloe Elizabeth Price</h1>
       <div className="imgcendrier text-center" />
       <div className="imganarchie text-center" />
 
-      <h1 className="text-center">Chloe Elizabeth Price</h1>
       <h2 className="text-center">Biographie de Chloe :</h2>
 
       <div className="videocenter text-center">
