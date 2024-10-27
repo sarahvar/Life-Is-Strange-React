@@ -69,7 +69,7 @@ const CharacterTable = () => {
       <h1 className="header-title"><u>Bienvenue dans le monde de Life is Strange</u></h1>
 
       <p className="intro-text">
-        Life is Strange est un jeu d’aventure interactif qui suit l’histoire de Max Caulfield, une jeune photographe qui découvre qu'elle peut remonter le temps. Cette capacité unique la plonge dans une quête pleine de mystères et de dilemmes moraux. À travers chaque décision, Max façonne l’histoire et influence le destin des personnages d’Arcadia Bay. Ce jeu explore des thèmes profonds tels que l’amitié, l'amour, le deuil, la responsabilité, le destin et les conséquences de chaque action. Découvrez l'univers unique et les personnages mémorables de Life is Strange.
+        Life is Strange est un jeu d’aventure interactif qui suit l’histoire de Max Caulfield, une jeune photographe qui découvre qu'elle peut remonter le temps. Cette capacité unique la plonge dans une quête pleine de mystères et de dilemmes moraux. À travers chaque décision, Max et toi façonnent l’histoire et influence le destin des personnages d’Arcadia Bay. Ce jeu explore des thèmes profonds tels que l’amitié, l'amour, le deuil, la responsabilité, le destin et les conséquences de chaque action. Découvrez l'univers unique et les personnages mémorables de Life is Strange.
       </p>
       <div className="table-container">
         <table>
