@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import MemoryGame from '../../pages/MemoryGame';
 
 // Les pages à afficher dans la navigation
 const pages = {
@@ -9,6 +10,7 @@ const pages = {
   chloe: { url: '/chloe', title: 'Fiche de personnage : Chloé' },
   rachel: { url: '/rachel', title: 'Fiche de personnage : Rachel' },
   quiz: { url: '/quiz', title: 'Quiz Interactif' },
+  memoryGame: { url: '/memoryGame', title: 'Jeu de memoire' },
   
     // login: { url: '/login', title: 'Se connecter' },     // Nouveau lien vers Login
     // signup: { url: '/signup', title: "S'inscrire" }      // Nouveau lien vers Signup

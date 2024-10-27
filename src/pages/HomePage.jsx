@@ -23,6 +23,9 @@ const HomePage = () => {
           <li>
             <Link to="/quiz">Quiz Interactif</Link>
           </li>
+          <li>
+            <Link to="/memoryGame">Jeu de memoire</Link>
+          </li>
         </ul>
       </nav>
       
