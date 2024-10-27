@@ -98,11 +98,12 @@ img {
 /* Vos styles existants pour la grille et les cartes */
 .grid {
   display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
   gap: 20px;
   margin-top: 20px;
 }
 
-
+/* ... reste de vos styles existants ... */
 
 /* Responsive: pour les tablettes en mode paysage */
 @media (max-width: 1024px) {
