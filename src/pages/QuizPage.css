@@ -93,3 +93,13 @@ button:hover {
     border-left: 5px solid #28a745; /* Bordure gauche verte pour la bonne réponse */
     color: #155724; /* Texte en vert foncé pour meilleure lisibilité */
 }
+.info-message {
+    background-color: #f1c40f; /* Couleur de fond pour le message */
+    color: #333; /* Couleur du texte */
+    padding: 15px;
+    margin: 20px 0; /* Espacement autour du message */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte */
+    font-weight: bold; /* Mettre le texte en gras */
+  }
+  
