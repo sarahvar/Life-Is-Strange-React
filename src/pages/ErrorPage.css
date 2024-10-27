@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  background: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.error-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Effet de superposition sombre */
+}
+
+.error-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-content h1 {
+  font-size: 8rem;
+  margin-bottom: 10px;
+  color: #FF6A3D; /* Couleur chaude rappelant l’ambiance du jeu */
+}
+
+.error-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.error-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+img {
+  width: 50%; /* Taille par défaut sur les grands écrans */
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+  transition: all 0.3s ease; /* Transition douce pour le redimensionnement */
+}
+
+.home-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #FF6A3D; /* Couleur de Life is Strange */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #f57f5b;
+}
