@@ -11,7 +11,6 @@ body {
   background: #003366;
   color: #fff;
   min-height: 100vh; /* Permet au contenu de dépasser si nécessaire */
-  display: flex; /* Ajouté pour centrer le contenu */
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
 }
