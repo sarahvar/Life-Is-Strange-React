@@ -1,5 +1,9 @@
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Utilisez la police importée ici */
+  font-family: 'Gloria Hallelujah', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,16 +17,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Gloria Hallelujah', cursive; /* La police de votre choix pour le corps */
+  background-color: #f0f8ff; /* Couleur de fond plus douce */
+  color: #333; /* Couleur de texte principale */
+  cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */
+  overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #003366; 
 }
 
 button {
@@ -31,7 +40,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: inherit; /* Utilise la police de la famille de caractères de l'élément parent */
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -49,7 +58,7 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
- 
+
   button {
     background-color: #f9f9f9;
   }
