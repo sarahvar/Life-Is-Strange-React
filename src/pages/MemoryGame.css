@@ -5,9 +5,10 @@
   padding: 20px;
 }
 
+/* Grille de 4 colonnes pour les écrans d'ordinateurs et tablettes */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(4, 100px);
   grid-gap: 10px;
   justify-content: center;
 }
@@ -50,10 +51,10 @@ img {
   height: 100%;
 }
 
-/* Responsive: tablettes en mode paysage et petits ordinateurs */
+/* Responsive: pour les tablettes en mode paysage */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(3, 90px);
+    grid-template-columns: repeat(4, 90px);
     grid-gap: 8px;
   }
   .card-inner {
@@ -62,7 +63,7 @@ img {
   }
 }
 
-/* Responsive: tablettes en mode portrait et petits écrans */
+/* Responsive: pour les tablettes en mode portrait et petits écrans */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 80px);
@@ -74,7 +75,7 @@ img {
   }
 }
 
-/* Responsive: smartphones en mode paysage */
+/* Responsive: pour les smartphones en mode paysage */
 @media (max-width: 576px) {
   .grid {
     grid-template-columns: repeat(3, 70px);
@@ -86,7 +87,7 @@ img {
   }
 }
 
-/* Responsive: smartphones en mode portrait */
+/* Responsive: pour les smartphones en mode portrait */
 @media (max-width: 400px) {
   .grid {
     grid-template-columns: repeat(3, 60px);
