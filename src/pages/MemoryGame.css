@@ -50,6 +50,59 @@ img {
   width: 100%;
   height: 100%;
 }
+.memory-game {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #357abd;
+}
+
+.victory-message {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Vos styles existants pour la grille et les cartes */
+.grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
 
 /* Responsive: pour les tablettes en mode paysage */
 @media (max-width: 1024px) {

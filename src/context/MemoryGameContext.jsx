@@ -1,4 +1,3 @@
-// src/context/MemoryGameContext.jsx
 import React, { createContext, useState, useEffect } from 'react';
 
 // Créer le contexte
@@ -32,15 +31,53 @@ export const MemoryGameProvider = ({ children }) => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const [isGameStarted, setIsGameStarted] = useState(false);
+  const [isGameComplete, setIsGameComplete] = useState(false);
+  const [timerInterval, setTimerInterval] = useState(null); // Nouvel état pour suivre l'intervalle
 
+  // Initialisation des cartes
   useEffect(() => {
     setCards(shuffleArray(initialImages));
   }, []);
 
+  // Gestion du chronomètre
+  useEffect(() => {
+    if (isGameStarted && !isGameComplete) {
+      const interval = setInterval(() => {
+        setElapsedTime(prevTime => prevTime + 1);
+      }, 1000);
+      setTimerInterval(interval); // Sauvegarder la référence de l'intervalle
+      
+      return () => {
+        if (interval) {
+          clearInterval(interval);
+        }
+      };
+    } else if (isGameComplete && timerInterval) {
+      clearInterval(timerInterval);
+      setTimerInterval(null);
+    }
+  }, [isGameStarted, isGameComplete]);
+
+  // Vérification de fin de partie
+  useEffect(() => {
+    if (matchedCards.length === cards.length && cards.length > 0) {
+      setIsGameComplete(true);
+    }
+  }, [matchedCards, cards.length]);
+
   const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
   const flipCard = (index) => {
-    if (flippedCards.length === 2 || flippedCards.includes(index) || matchedCards.includes(index)) return;
+    if (flippedCards.length === 2 || flippedCards.includes(index) || matchedCards.includes(index)) {
+      return;
+    }
+
+    // Démarrer le jeu au premier clic
+    if (!isGameStarted) {
+      setIsGameStarted(true);
+    }
 
     const newFlippedCards = [...flippedCards, index];
     setFlippedCards(newFlippedCards);
@@ -48,14 +85,44 @@ export const MemoryGameProvider = ({ children }) => {
     if (newFlippedCards.length === 2) {
       const [firstIndex, secondIndex] = newFlippedCards;
       if (cards[firstIndex].id === cards[secondIndex].id) {
-        setMatchedCards([...matchedCards, firstIndex, secondIndex]);
+        setMatchedCards(prevMatched => [...prevMatched, firstIndex, secondIndex]);
       }
       setTimeout(() => setFlippedCards([]), 1000);
     }
   };
 
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = time % 60;
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  };
+
+  // Ajouter une fonction pour réinitialiser le jeu
+  const resetGame = () => {
+    setCards(shuffleArray(initialImages));
+    setFlippedCards([]);
+    setMatchedCards([]);
+    setElapsedTime(0);
+    setIsGameStarted(false);
+    setIsGameComplete(false);
+    if (timerInterval) {
+      clearInterval(timerInterval);
+      setTimerInterval(null);
+    }
+  };
+
   return (
-    <MemoryGameContext.Provider value={{ cards, flippedCards, matchedCards, flipCard }}>
+    <MemoryGameContext.Provider 
+      value={{ 
+        cards, 
+        flippedCards, 
+        matchedCards, 
+        flipCard, 
+        elapsedTime: formatTime(elapsedTime), 
+        isGameComplete,
+        resetGame 
+      }}
+    >
       {children}
     </MemoryGameContext.Provider>
   );
