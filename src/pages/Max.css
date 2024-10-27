@@ -79,6 +79,13 @@ th, td {
     text-align: left;
     border: 1px solid #ddd;
 }
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ececec;
+}
 ul {
     list-style-type: none; /* Enlève les puces */
     padding: 0; /* Enlève le padding par défaut */

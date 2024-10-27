@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  cursor: url(/assets/Curseur.png), auto;
+  text-align: center;
+  font-size: 16px; /* Taille de police de base */
+}
 .memory-game {
   text-align: center;
   padding: 20px;
