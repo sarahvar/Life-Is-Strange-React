@@ -52,9 +52,9 @@ const initialQuestions = [
     correct: 0
   },
   {
-    question: 'Qui est le principal antagoniste de "Life Is Strange" ?',
-    answers: ['Nathan Prescott', 'Mark Jefferson', 'David Madsen', 'Frank Bowers'],
-    correct: 1
+    question: ' Pourquoi Max retourne-t-elle à Arcadia Bay après plusieurs années d\'absence ?',
+    answers: ['Pour renouer avec sa meilleure amie Chloé', 'Pour un projet de photographie', 'Pour suivre des cours à la Blackwell Academy', 'Pour résoudre un mystère local'],
+    correct: 2
   },
   {
     question: 'Quel est le nom de la mère de Max ?',
