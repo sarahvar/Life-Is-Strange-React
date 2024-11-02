@@ -6,7 +6,6 @@ body {
     background-color: #f0f8ff; /* Couleur de fond plus douce */
     color: #333; /* Couleur de texte principale */
     margin: 0;
-    padding: 0;
     cursor: url("/assets/Curseur.png"), auto; /* Utilisation du curseur personnalisé */
     overflow-x: hidden; /* Empêche le défilement horizontal sur le body */
 }
@@ -25,7 +24,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 h2 {
