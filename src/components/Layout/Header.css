@@ -12,6 +12,7 @@
 }
 
 .home-link h1 {
+    padding-top: 1rem;
     margin-bottom: 20px;
     font-weight: bold;
     text-decoration: underline;
