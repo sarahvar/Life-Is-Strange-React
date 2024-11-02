@@ -43,6 +43,36 @@ ul.navigation li.active a {
   color: #ffffff;
   font-weight: bold;
 }
+/* Responsive styles for screens between 769px and 1440px */
+@media (min-width: 769px) and (max-width: 1440px) {
+  /* Ajuste le padding pour réduire l'espace de l'en-tête */
+  .Navbar {
+    padding: 15px 10px;
+  }
+
+  /* Ajuste la taille de la police et l'espacement des éléments de navigation */
+  ul.navigation {
+    padding: 15px 0;
+  }
+
+  ul.navigation li {
+    margin: 0 10px; /* Réduit l'espacement entre les éléments de navigation */
+    padding-top: 1rem;
+  }
+
+  ul.navigation a {
+    font-size: 0.95rem; /* Diminue légèrement la taille de la police */
+    padding: 0px 12px; /* Réduit le padding autour des liens */
+  }
+
+  ul.navigation a:hover,
+  ul.navigation a.active,
+  ul.navigation li.active a {
+    background-color: #3399ff;
+    font-weight: bold;
+  }
+}
+
 /* Responsive styles for mobile screens */
 @media (max-width: 768px) {
   ul.navigation {
