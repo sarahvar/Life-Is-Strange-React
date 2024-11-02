@@ -11,6 +11,7 @@ body {
 .memory-game {
   text-align: center;
   padding: 20px;
+  cursor: pointer !important;
 }
 
 /* Grille de 4 colonnes pour les écrans d'ordinateurs et tablettes */
