@@ -39,7 +39,6 @@
   font-weight: normal; /* Enlever le gras */
   transition: transform 0.3s ease; /* Transition pour l'effet de grossissement */
 }
-
 /* Style pour la liste de navigation */
 .homepage ul {
   list-style-type: none;
