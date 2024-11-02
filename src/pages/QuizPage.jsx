@@ -153,12 +153,7 @@ const QuizPage = () => {
   };
 
   return (
-    <div>
-      {/* Message d'information pour certains navigateurs */}
-      <div className="info-message">
-        <p><strong>Info :</strong> Sur certains navigateurs (comme Brave, Safari et Internet Explorer), placez votre curseur sur le texte, pas sur le rond, pour sélectionner votre réponse.</p>
-      </div>
-
+    <div className="quiz-page">
       {!showResults ? (
         <Quiz
           questions={questions}
