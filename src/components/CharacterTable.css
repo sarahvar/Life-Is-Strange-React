@@ -7,7 +7,7 @@ body {
     color: #333; /* Couleur de texte principale */
     margin: 0;
     padding: 0;
-    cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */
+    cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */ 
     overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
