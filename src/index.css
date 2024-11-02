@@ -24,7 +24,6 @@ body {
   font-family: 'Gloria Hallelujah', cursive; /* La police de votre choix pour le corps */
   background-color: #f0f8ff; /* Couleur de fond plus douce */
   color: #333; /* Couleur de texte principale */
-  cursor: url("/assets/Curseur.png"), auto; /* Curseur personnalisé */
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
