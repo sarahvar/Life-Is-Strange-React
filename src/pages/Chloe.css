@@ -11,11 +11,6 @@ body {
     text-align: center; /* Centrer tout le texte dans le corps */
 }
 
-/* Assurer que le curseur reste le même pour tous les éléments */
-a, button, input, textarea, li {
-    cursor: url("/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
-}
-
 /* Supprimer les puces des listes */
 ul, ol {
     list-style-type: none;
