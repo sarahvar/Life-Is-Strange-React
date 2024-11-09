@@ -2,7 +2,7 @@
 
 /* Style pour les contrôles de musique */
 #music-controls {
-    margin-top: 9%; /* Centrer verticalement */
+    margin-top: 2%; /* Centrer verticalement */
     right: 20px; /* Positionner à droite */
     transform: translateY(-50%); /* Ajuster le centrage vertical */
     z-index: 1000; /* Assurer que les boutons sont au-dessus des autres éléments */
