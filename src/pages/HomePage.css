@@ -95,6 +95,23 @@
 .homepage li:hover {
   cursor: url("/public/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
 }
+/* Pour les tablettes */
+@media (min-width: 481px) and (max-width: 768px) {
+  .homepage {
+    background-size: contain; /* Ajuste le GIF pour qu'il soit entièrement visible sans être coupé */
+    background-position: top center; /* Aligne l'image en haut et au centre de l'écran */
+    background-color: #003366;
+  }
+
+  .homepage ul {
+    margin-top: 40%; /* Ajuste la marge supérieure pour les tablettes */
+  }
+
+  .homepage li {
+    margin: 8px 0; /* Espacement confortable entre les éléments de la liste */
+  }
+}
+
 @media (max-width: 768px) {
   .homepage ul {
     margin-top: 48%; /* Ajustement de la marge supérieure pour compenser la taille de l'écran */
