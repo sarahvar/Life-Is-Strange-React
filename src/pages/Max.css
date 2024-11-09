@@ -10,11 +10,6 @@ body {
     overflow-x: hidden; /* Empêche le défilement horizontal sur le body */
 }
 
-/* Assurer que le curseur reste le même pour tous les éléments */
-a, button, input, textarea, li {
-    cursor: url("/assets/Curseur.png"), auto; /* Appliquer le curseur personnalisé */
-}
-
 /* Styles pour les titres */
 h1, h2, h3, h4 {
     color: #003366; /* Couleur sombre pour les titres */
