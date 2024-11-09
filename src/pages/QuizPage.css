@@ -1,14 +1,16 @@
 /* Importer la police de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-/* Styles généraux */
-body {
+.quiz-page {
     font-family: 'Gloria Hallelujah', sans-serif;
+    background-color: #f0f8ff;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    cursor: pointer;
 }
-
 
 h1{
     text-align: center;
