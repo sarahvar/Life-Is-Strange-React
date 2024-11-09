@@ -5,8 +5,7 @@
 .homepage {
   height: 100%; /* Assurer que html et body prennent toute la hauteur de la fenêtre */
   margin: 0; /* Enlever les marges par défaut du navigateur */
-  background-image: url("/public/assets/HomePage.gif"); /* Chemin relatif vers l'image de fond */
-  
+  background-image: url("./src/assets/Accueil.gif"); /* Chemin relatif vers l'image de fond */
   background-size: cover; /* Adapte l'image à la taille de la fenêtre */
   background-repeat: no-repeat; /* Évite la répétition de l'image */
   background-position: center 20%; /* Centre l'image avec un décalage vers le bas */
