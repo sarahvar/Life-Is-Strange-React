@@ -6,10 +6,12 @@
     right: 20px; /* Positionner à droite */
     transform: translateY(-50%); /* Ajuster le centrage vertical */
     z-index: 1000; /* Assurer que les boutons sont au-dessus des autres éléments */
+    display: flex; /* Utiliser Flexbox pour aligner les boutons */
+    flex-direction: column; /* Aligner les boutons en colonne */
 }
 
 #play-message, #stop-music {
-    background: rgba(0, 0, 0, 0.7);
+    background: #3399ff;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
