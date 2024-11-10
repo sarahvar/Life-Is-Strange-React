@@ -125,6 +125,7 @@
 /* Pour les très petits écrans (smartphones) */
 @media (max-width: 480px) {
   .homepage {
+    background-image: url("/public/assets/Font-écran.webp"); /* Utilise l'image de fond personnalisé */
     background-size: contain; /* Adapte le GIF à la taille de l'écran sans le couper */
     background-position: top; /* Aligne le GIF en haut de l'écran */
     background-color: #003366; 
