@@ -111,7 +111,26 @@ img {
   margin-top: 20px;
 }
 
-/* ... reste de vos styles existants ... */
+.difficulty-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.difficulty-buttons button.selected {
+  background-color: #f0f0f0;
+}
+
+.difficulty-buttons button.active {
+  background-color: #4a90e2; /* Vert pour le bouton actif */
+  color: white;
+  font-weight: bold;
+  border-color: #4CAF50;
+}
+
 
 /* Responsive: pour les tablettes en mode paysage */
 @media (max-width: 1024px) {

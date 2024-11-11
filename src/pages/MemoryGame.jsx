@@ -10,21 +10,46 @@ const MemoryGame = () => {
     flipCard, 
     elapsedTime, 
     isGameComplete,
-    resetGame 
+    resetGame, 
+    difficulty, 
+    setDifficulty,
+    formatTime // Importer la fonction de formatage du temps
   } = useContext(MemoryGameContext);
+
+  const handleDifficultyChange = (level) => {
+    setDifficulty(level);
+    resetGame(); // Redémarre le jeu avec la nouvelle difficulté
+  };
 
   return (
     <div className="memory-game">
       <div className="game-header">
         <h1>Jeu de Mémoire</h1>
         <div className="game-controls">
-          <h2>Temps écoulé : {elapsedTime}</h2>
-          <button 
-            className="reset-button"
-            onClick={resetGame}
-          >
+          <h2>Temps écoulé : {formatTime(elapsedTime)}</h2> {/* Appliquer formatTime ici */}
+          <button className="reset-button" onClick={resetGame}>
             Nouvelle partie
           </button>
+          <div className="difficulty-buttons">
+            <button 
+              className={difficulty === 'easy' ? 'selected active' : ''} 
+              onClick={() => handleDifficultyChange('easy')}
+            >
+              Facile
+            </button>
+            <button 
+              className={difficulty === 'medium' ? 'selected active' : ''} 
+              onClick={() => handleDifficultyChange('medium')}
+            >
+              Moyen
+            </button>
+            <button 
+              className={difficulty === 'hard' ? 'selected active' : ''} 
+              onClick={() => handleDifficultyChange('hard')}
+            >
+              Difficile
+            </button>
+          </div>
         </div>
       </div>
 
@@ -49,7 +74,7 @@ const MemoryGame = () => {
 
       {isGameComplete && (
         <div className="victory-message">
-          <h2>Bravo, vous avez gagné en {elapsedTime}!</h2>
+          <h2>Bravo, vous avez gagné en {formatTime(elapsedTime)}!</h2> {/* Appliquer formatTime ici aussi */}
         </div>
       )}
     </div>
