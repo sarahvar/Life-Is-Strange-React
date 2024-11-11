@@ -16,7 +16,7 @@ body {
 /* Grille de 4 colonnes pour les écrans d'ordinateurs et tablettes */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
   justify-content: center;
 }
@@ -125,7 +125,7 @@ img {
 }
 
 .difficulty-buttons button.active {
-  background-color: #4a90e2; /* Vert pour le bouton actif */
+  background-color: #4a90e2; /* Bleua pour le bouton actif */
   color: white;
   font-weight: bold;
   border-color: #4CAF50;
