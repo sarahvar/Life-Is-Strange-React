@@ -171,7 +171,7 @@ img {
 /* Responsive: pour les smartphones en mode portrait */
 @media (max-width: 400px) {
   .grid {
-    grid-template-columns: repeat(3, 60px);
+    grid-template-columns: repeat(4, 60px);
     grid-gap: 4px;
   }
   .card-inner {
