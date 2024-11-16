@@ -89,6 +89,37 @@ button.active {
   font-weight: bold;
   border-color: #0056b3; /* Bordure bleu foncé */
 }
+/* Style pour les titres h2 */
+h2 {
+  background-color: #4caf50; /* Vert */
+  color: white; /* Texte en blanc pour un bon contraste */
+  padding: 10px 20px; /* Ajoute de l'espace autour du texte */
+  border-radius: 5px; /* Coins arrondis */
+  text-align: center; /* Centrage du texte */
+  margin: 20px auto; /* Espacement autour du titre */
+  max-width: 80%; /* Limite la largeur du titre */
+  font-size: 24px; /* Taille de la police */
+}
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white; /* Texte en blanc */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Bleu vif */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #0056b3; /* Bleu foncé au survol */
+  transform: scale(1.05); /* Légèrement agrandi au survol */
+}
+
+.reset-button:active {
+  background-color: #003f7f; /* Bleu encore plus foncé au clic */
+  transform: scale(0.95); /* Légèrement réduit au clic */
+}
 
 /* Styles réactifs pour différents écrans */
 @media (max-width: 1024px) {
