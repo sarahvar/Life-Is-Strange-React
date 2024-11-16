@@ -90,7 +90,7 @@ button.active {
   border-color: #0056b3; /* Bordure bleu foncé */
 }
 /* Style pour les titres h2 */
-h2 {
+.victory-message {
   background-color: #4caf50; /* Vert */
   color: white; /* Texte en blanc pour un bon contraste */
   padding: 10px 20px; /* Ajoute de l'espace autour du texte */
@@ -114,7 +114,12 @@ h2 {
   transform: scale(1.05); /* Légèrement agrandi au survol */
   color:#f0f8ff
 }
-
+h2 {
+  font-size: 2em;
+  color: #3399ff;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 12px;
+}
 /* Styles réactifs pour différents écrans */
 @media (max-width: 1024px) {
   .grid {

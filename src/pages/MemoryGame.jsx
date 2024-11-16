@@ -74,7 +74,7 @@ const MemoryGame = () => {
 
       {isGameComplete && (
         <div className="victory-message">
-          <h2>Bravo, vous avez gagné en {formatTime(elapsedTime)}!</h2> {/* Appliquer formatTime ici aussi */}
+          <h3>Bravo, vous avez gagné en {formatTime(elapsedTime)}!</h3> {/* Appliquer formatTime ici aussi */}
         </div>
       )}
     </div>
