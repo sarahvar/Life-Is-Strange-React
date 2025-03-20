@@ -13,7 +13,9 @@ const Chloe = lazy(() => import('./pages/Chloe'));
 const Rachel = lazy(() => import('./pages/Rachel'));
 const Quiz = lazy(() => import('./pages/QuizPage'));
 const MemoryGame = lazy(() => import('./pages/MemoryGame'));
-const ErrorPage = lazy(() => import('./pages/ErrorPage')); // Import de la page d'erreur 404
+const ErrorPage = lazy(() => import('./pages/ErrorPage'));
+const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
+const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
 
 const App = () => {
   return (
@@ -22,7 +24,10 @@ const App = () => {
         <Router>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
+              {/* Page d'accueil sans footer */}
               <Route path="/" element={<HomePage />} />
+
+              {/* Pages avec Layout (donc avec Footer) */}
               <Route element={<Layout />}>
                 <Route path="/personnages" element={<CharacterTable />} />
                 <Route path="/max" element={<Max />} />
@@ -30,8 +35,11 @@ const App = () => {
                 <Route path="/rachel" element={<Rachel />} />
                 <Route path="/quiz" element={<Quiz />} />
                 <Route path="/memoryGame" element={<MemoryGame />} />
+                <Route path="/mentions-legales" element={<MentionsLegales />} />
+                <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
               </Route>
-              {/* Route pour capturer toutes les autres URL non définies */}
+
+              {/* Route 404 */}
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </Suspense>
