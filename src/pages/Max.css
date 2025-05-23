@@ -100,7 +100,7 @@ img {
 .selfiemax img,
 .maxguitare img,
 .imgmax img {
-    max-width: 100%; /* Assure que les images ne débordent pas */
+    max-width: 75%; /* Assure que les images ne débordent pas */
 }
 
 /* Style pour les images dans les cellules du tableau */
