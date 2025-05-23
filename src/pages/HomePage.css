@@ -43,7 +43,7 @@
 .homepage ul {
   list-style-type: none;
   padding: 0;
-  margin: 48% 0 0 0;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column; /* Arrange les éléments en colonne */
   align-items: center; /* Centre les éléments horizontalement */
